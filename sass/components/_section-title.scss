@@ -2,7 +2,7 @@
   font-weight: 600;
   font-size: 25px;
   line-height: 1.2;
-  color: #f1f1f1;
+  color: $colorWhite;
 
   @media (min-width: 640px) {
     font-size: 30px;
@@ -13,6 +13,6 @@
     font-weight: 500;
     font-size: 45px;
     line-height: 1.1;
-    color: #ff4c0d;
+    color: $colorOrange;
   }
 }
