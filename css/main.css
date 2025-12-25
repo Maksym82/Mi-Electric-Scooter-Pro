@@ -38,7 +38,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   color: #f1f1f1;
-  background-color: #e0e0e0;
+  background-color: #222;
 }
 
 html {
@@ -83,6 +83,34 @@ input {
   font-family: inherit;
 }
 
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../fonts/Gilroy-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 [class*=__container] {
   max-width: 320px;
   margin: 0 auto;
@@ -105,6 +133,7 @@ input {
   font-weight: 600;
   font-size: 25px;
   line-height: 1.2;
+  color: #f1f1f1;
 }
 @media (min-width: 640px) {
   .section-title {
@@ -117,5 +146,6 @@ input {
     font-weight: 500;
     font-size: 45px;
     line-height: 1.1;
+    color: #ff4c0d;
   }
 }/*# sourceMappingURL=main.css.map */
