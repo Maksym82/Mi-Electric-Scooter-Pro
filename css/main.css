@@ -172,6 +172,50 @@ input {
   min-height: 56px;
 }
 
+.logo {
+  z-index: 2;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.menu__link {
+  position: relative;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+  color: #ff4c0d;
+}
+
+.menu__link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #ff4c0d;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+  -webkit-transition: width 0.6s ease;
+}
+
+.menu__link:hover::after,
+.menu__link:focus::after {
+  width: 100%;
+  left: 0;
+}
+
 .icon-menu {
   display: none;
 }

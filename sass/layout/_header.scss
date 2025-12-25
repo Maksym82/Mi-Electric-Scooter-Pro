@@ -16,6 +16,46 @@
   min-height: 56px;
 }
 
+.logo {
+  z-index: 2;
+}
+
+.menu__list {
+  display: flex;
+  gap: 30px;
+}
+
+.menu__link {
+  position: relative;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  transition: color 0.3s linear;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+  color: $colorOrange;
+}
+
+.menu__link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: $colorOrange;
+  transition: width 0.3s ease;
+  -webkit-transition: width 0.6s ease;
+}
+
+.menu__link:hover::after,
+.menu__link:focus::after {
+  width: 100%;
+  left: 0;
+}
+
 // Burger menu
 .icon-menu {
   display: none;
