@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,10 +10,39 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <p class="section-title">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
-      aliquam dolorum, optio, numquam enim placeat consectetur reiciendis beatae
-      distinctio voluptatem natus, ex provident accusamus molestias.
-    </p>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__container">
+        <a href="./index.html">
+          <svg class="header__logo" width="49" height="28">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <nav class="header__menu">
+          <div class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="">О продукте</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Внешний вид</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Безопасность</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">FAQ</a>
+              </li>
+            </ul>
+            <button class="icon-menu" type="button" aria-label="Відкрити меню">
+              <span></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
   </body>
 </html>
