@@ -1,0 +1,13 @@
+.hero {
+  padding-top: 300px;
+  
+  background-image: image-set(
+    '../images/hero/hero-mobile.avif' type('image/avif'),
+    '../images/hero/hero-mobile.webp' type('image/webp'),
+    '../images/hero/hero-mobile.jpg' type('image/jpeg')
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+   height: 100vh;
+}
