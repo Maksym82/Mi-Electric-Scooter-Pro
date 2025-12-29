@@ -47,18 +47,27 @@
     <main>
       <!-- Hero -->
       <section class="hero">
-        <h1 class="hero__title">
-          Стильный электросамокат с мощным аккумулятором
-        </h1>
-        <p class="hero__text">
-          Улучшенная производительность для дальних путешествий. Работает так же
-          просто, как и выглядит.
-        </p>
-        <div class="theme-toggle" role="group" aria-label="Переключение темы">
-          <button id="light-btn" class="active" aria-label="Светлая тема">
-            Белый
-          </button>
-          <button id="dark-btn" aria-label="Тёмная тема">Черный</button>
+        <div class="hero__container">
+          <picture>
+            <source
+              srcset="./images/hero/hero-mobile.webp"
+              type="image/webp"
+            >
+            <img class="hero__image" src="./images/hero/hero-mobile.png" alt="электро байк">
+          </picture>
+          <h1 class="hero__title">
+            Стильный электросамокат с мощным аккумулятором
+          </h1>
+          <p class="hero__text">
+            Улучшенная производительность для дальних путешествий. Работает так
+            же просто, как и выглядит.
+          </p>
+          <div class="theme-toggle" role="group" aria-label="Переключение темы">
+            <button id="light-btn" class="active" aria-label="Светлая тема">
+              Белый
+            </button>
+            <button id="dark-btn" aria-label="Тёмная тема">Черный</button>
+          </div>
         </div>
       </section>
     </main>
