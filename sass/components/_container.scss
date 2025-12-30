@@ -3,6 +3,16 @@
   margin: 0 auto;
   padding: 0 20px;
 
+  @media (min-width: 360px) {
+    max-width: 360px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: 375px) {
+    max-width: 375px;
+    padding: 0 20px;
+  }
+
   @media (min-width: 640px) {
     max-width: 640px;
     padding: 0 40px;
