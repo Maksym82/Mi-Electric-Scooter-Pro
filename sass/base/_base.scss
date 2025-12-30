@@ -21,12 +21,22 @@ body {
   height: 100%;
 }
 
-body {
+body.light-theme {
   font-family: "Gilroy", sans-serif;
   font-size: 14px;
   line-height: 1.5;
   color: $colorBlack;
   background-color: $color-bg-light;
+  transition: background-color $transition, color $transition;
+}
+
+body.dark-theme {
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $colorWhite;
+  background-color: $color-bg-dark;
+  transition: background-color $transition, color $transition;
 }
 
 html {

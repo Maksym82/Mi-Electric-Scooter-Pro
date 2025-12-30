@@ -9,6 +9,7 @@
 
 .hero__image {
   display: block;
+  justify-self: center;
 }
 
 .hero__title {
@@ -24,6 +25,28 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 1.2;
-  color: $colorBlack;
+  // color: $colorBlack;
   margin-bottom: 24px;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  border: 2px solid #0078d7;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.theme-toggle button {
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background $transition, color $transition;
+}
+
+.theme-toggle button.active {
+  background: #0078d7;
+  color: #fff;
 }
