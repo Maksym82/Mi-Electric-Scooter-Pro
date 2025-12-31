@@ -9,7 +9,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body class="light-theme">
     <!-- Header -->
     <header class="header">
       <div class="header__container">
@@ -49,11 +49,12 @@
       <section class="hero">
         <div class="hero__container">
           <picture>
-            <source
-              srcset="./images/hero/hero-mobile.avif"
-              type="image/webp"
-            >
-            <img class="hero__image" src="./images/hero/hero-mobile.webp" alt="электро байк">
+            <source srcset="./images/hero/hero-mobile.avif" type="image/webp" />
+            <img
+              class="hero__image"
+              src="./images/hero/hero-mobile.webp"
+              alt="электро байк"
+            />
           </picture>
           <h1 class="hero__title">
             Стильный электросамокат с мощным аккумулятором
@@ -63,10 +64,8 @@
             же просто, как и выглядит.
           </p>
           <div class="theme-toggle" role="group" aria-label="Переключение темы">
-            <button id="light-btn" class="active" aria-label="Светлая тема">
-              Белый
-            </button>
-            <button id="dark-btn" aria-label="Тёмная тема">Черный</button>
+            <button id="light-btn" aria-label="Светлая тема">Белый</button>
+            <button id="dark-btn" aria-label="Тёмная тема">Чёрный</button>
           </div>
         </div>
       </section>

@@ -28,11 +28,55 @@
   margin-bottom: 24px;
 }
 
+/* Светлая тема */
+body.light-theme {
+  background-color: $color-bg-light;
+  color: $colorBlack;
+  transition: background-color $transition, color $transition;
+}
+
+body.light-theme .theme-toggle {
+  border: 3px solid $colorBlack;
+  transition: border $transition;
+  border-radius: 65px;
+}
+
+body.light-theme #dark-btn {
+  border-radius: 65px;
+  background: $colorBlack;
+  color: $colorWhite;
+  transition: background $transition, color $transition,
+    border-radius $transition;
+}
+
+/* Тёмная тема */
+body.dark-theme {
+  background-color: $color-bg-dark;
+  color: $colorWhite;
+  transition: background-color $transition, color $transition;
+}
+
+body.dark-theme .theme-toggle {
+  border: 3px solid $colorWhite;
+  transition: border $transition;
+  border-radius: 65px;
+}
+
+body.dark-theme #light-btn {
+  background: $colorWhite;
+  border-radius: 65px;
+  color: $colorBlack;
+  transition: background $transition, color $transition,
+    border-radius $transition;
+}
+
+/* Общие стили для кнопок */
 .theme-toggle {
   display: inline-flex;
-  border: 2px solid #0078d7;
   border-radius: 8px;
   overflow: hidden;
+  width: 280px;
+  height: 54px;
 }
 
 .theme-toggle button {
@@ -42,10 +86,6 @@
   background: transparent;
   cursor: pointer;
   font-size: 18px;
-  transition: background $transition, color $transition;
-}
-
-.theme-toggle button.active {
-  background: #0078d7;
-  color: #fff;
+  transition: background $transition, color $transition,
+    border-radius $transition;
 }

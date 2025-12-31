@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -386,13 +387,61 @@ input {
   margin-bottom: 24px;
 }
 
+/* Светлая тема */
+body.light-theme {
+  background-color: #e0e0e0;
+  color: #151515;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+body.light-theme .theme-toggle {
+  border: 3px solid #151515;
+  -webkit-transition: border 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
+  border-radius: 65px;
+}
+
+body.light-theme #dark-btn {
+  border-radius: 65px;
+  background: #151515;
+  color: #f1f1f1;
+  -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+/* Тёмная тема */
+body.dark-theme {
+  background-color: #222;
+  color: #f1f1f1;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+body.dark-theme .theme-toggle {
+  border: 3px solid #f1f1f1;
+  -webkit-transition: border 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
+  border-radius: 65px;
+}
+
+body.dark-theme #light-btn {
+  background: #f1f1f1;
+  border-radius: 65px;
+  color: #151515;
+  -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+/* Общие стили для кнопок */
 .theme-toggle {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  border: 2px solid #0078d7;
   border-radius: 8px;
   overflow: hidden;
+  width: 280px;
+  height: 54px;
 }
 
 .theme-toggle button {
@@ -404,11 +453,6 @@ input {
   background: transparent;
   cursor: pointer;
   font-size: 18px;
-  -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.theme-toggle button.active {
-  background: #0078d7;
-  color: #fff;
+  -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }/*# sourceMappingURL=main.css.map */
