@@ -40,8 +40,8 @@ body.light-theme {
   line-height: 1.5;
   color: #151515;
   background-color: #e0e0e0;
-  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
 body.dark-theme {
@@ -50,8 +50,8 @@ body.dark-theme {
   line-height: 1.5;
   color: #f1f1f1;
   background-color: #222;
-  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
 html {
@@ -391,14 +391,14 @@ input {
 body.light-theme {
   background-color: #e0e0e0;
   color: #151515;
-  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
 body.light-theme .theme-toggle {
   border: 3px solid #151515;
-  -webkit-transition: border 0.3s ease-in-out;
-  transition: border 0.3s ease-in-out;
+  -webkit-transition: border 0.4s ease-in-out;
+  transition: border 0.4s ease-in-out;
   border-radius: 65px;
 }
 
@@ -406,22 +406,22 @@ body.light-theme #dark-btn {
   border-radius: 65px;
   background: #151515;
   color: #f1f1f1;
-  -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+  -webkit-transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
 }
 
 /* Тёмная тема */
 body.dark-theme {
   background-color: #222;
   color: #f1f1f1;
-  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
 body.dark-theme .theme-toggle {
   border: 3px solid #f1f1f1;
-  -webkit-transition: border 0.3s ease-in-out;
-  transition: border 0.3s ease-in-out;
+  -webkit-transition: border 0.4s ease-in-out;
+  transition: border 0.4s ease-in-out;
   border-radius: 65px;
 }
 
@@ -429,8 +429,8 @@ body.dark-theme #light-btn {
   background: #f1f1f1;
   border-radius: 65px;
   color: #151515;
-  -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+  -webkit-transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
 }
 
 /* Общие стили для кнопок */
@@ -453,6 +453,6 @@ body.dark-theme #light-btn {
   background: transparent;
   cursor: pointer;
   font-size: 18px;
-  -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+  -webkit-transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
 }/*# sourceMappingURL=main.css.map */
