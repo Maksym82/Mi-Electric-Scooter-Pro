@@ -360,6 +360,8 @@ input {
   }
 }
 .hero {
+  position: relative;
+  z-index: 2;
   margin: 0 auto;
   background-image: url("../images/hero/decor-1.svg");
   background-repeat: no-repeat;
@@ -368,6 +370,7 @@ input {
 
 .hero__img-box {
   position: relative;
+  z-index: -1;
 }
 
 .hero__image {
@@ -399,6 +402,15 @@ input {
     padding-top: 200px;
   }
 }
+@media (min-width: 1440px) {
+  .hero__title {
+    font-size: 80px;
+    line-height: 1;
+    width: 1032px;
+    padding-top: 220px;
+    margin-bottom: 40px;
+  }
+}
 
 .hero__text {
   font-weight: 600;
@@ -411,6 +423,11 @@ input {
     width: 320px;
     font-size: 20px;
     margin-bottom: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .hero__text {
+    font-size: 30px;
   }
 }
 
