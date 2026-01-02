@@ -51,13 +51,29 @@
           <div class="hero__img-box">
             <picture>
               <source
-                srcset="./images/hero/hero-mobile.avif"
+                srcset="./images/hero/hero-tablet.avif"
+                type="image/avif"
+                media="(min-width: 640px)"
+              />
+              <source
+                srcset="./images/hero/hero-tablet.webp"
                 type="image/webp"
+                media="(min-width: 640px)"
+              />
+              <source
+                srcset="./images/hero/hero-mobile.avif"
+                type="image/avif"
+                media="(max-width: 639px)"
+              />
+              <source
+                srcset="./images/hero/hero-mobile.webp"
+                type="image/webp"
+                media="(max-width: 639px)"
               />
               <img
                 class="hero__image"
-                src="./images/hero/hero-mobile.webp"
-                alt="электро байк"
+                src="./images/hero/hero-mobile.png"
+                alt="Стильный электросамокат с мощным аккумулятором"
               />
             </picture>
           </div>
