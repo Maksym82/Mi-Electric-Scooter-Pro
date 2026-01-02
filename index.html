@@ -50,16 +50,39 @@
         <div class="hero__container">
           <div class="hero__img-box">
             <picture>
+              <!-- Desktop 1440px -->
+              <source
+                srcset="./images/hero/hero-desktop.avif"
+                type="image/avif"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="./images/hero/hero-desktop.webp"
+                type="image/webp"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="./images/hero/hero-desktop.png"
+                type="image/png"
+                media="(min-width: 1440px)"
+              />
+              <!-- Tablet 640–1439 -->
               <source
                 srcset="./images/hero/hero-tablet.avif"
                 type="image/avif"
-                media="(min-width: 640px)"
+                media="(min-width: 640px) and (max-width: 1439px)"
               />
               <source
                 srcset="./images/hero/hero-tablet.webp"
                 type="image/webp"
-                media="(min-width: 640px)"
+                media="(min-width: 640px) and (max-width: 1439px)"
               />
+              <source
+                srcset="./images/hero/hero-tablet.png"
+                type="image/png"
+                media="(min-width: 640px) and (max-width: 1439px)"
+              />
+              <!-- Mobile max-width: 639px -->
               <source
                 srcset="./images/hero/hero-mobile.avif"
                 type="image/avif"
@@ -70,6 +93,7 @@
                 type="image/webp"
                 media="(max-width: 639px)"
               />
+              <!-- Fallback PNG для мобильного -->
               <img
                 class="hero__image"
                 src="./images/hero/hero-mobile.png"
