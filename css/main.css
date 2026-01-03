@@ -428,6 +428,7 @@ input {
 @media (min-width: 1440px) {
   .hero__text {
     font-size: 30px;
+    width: 500px;
   }
 }
 
