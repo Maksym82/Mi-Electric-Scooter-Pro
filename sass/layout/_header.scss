@@ -14,6 +14,10 @@
   align-items: center;
   justify-content: space-between;
   min-height: 56px;
+
+  @media (min-width: 1440px) {
+    justify-content: left;
+  }
 }
 
 .logo {
@@ -27,6 +31,7 @@
   @media (min-width: 1440px) {
     flex-direction: row;
     gap: 40px;
+    margin-left: 90px;
   }
 }
 

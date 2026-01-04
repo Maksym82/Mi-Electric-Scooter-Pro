@@ -196,6 +196,13 @@ input {
           justify-content: space-between;
   min-height: 56px;
 }
+@media (min-width: 1440px) {
+  .header__container {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
 
 .logo {
   z-index: 2;
@@ -214,6 +221,7 @@ input {
         -ms-flex-direction: row;
             flex-direction: row;
     gap: 40px;
+    margin-left: 90px;
   }
 }
 
