@@ -39,7 +39,7 @@ body.light-theme {
   font-size: 14px;
   line-height: 1.5;
   color: #151515;
-  background-color: #e0e0e0;
+  background-color: #222;
   -webkit-transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
   transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
@@ -49,7 +49,7 @@ body.dark-theme {
   font-size: 14px;
   line-height: 1.5;
   color: #f1f1f1;
-  background-color: #222;
+  background-color: #e0e0e0;
   -webkit-transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
   transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
@@ -467,48 +467,58 @@ input {
 
 /* Светлая тема */
 body.light-theme {
-  background-color: #e0e0e0;
-  color: #151515;
-  -webkit-transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
-  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
-}
-
-body.light-theme .theme-toggle {
-  border: 3px solid #151515;
-  -webkit-transition: border 0.4s ease-in-out;
-  transition: border 0.4s ease-in-out;
-  border-radius: 65px;
-}
-
-body.light-theme #dark-btn {
-  border-radius: 65px;
-  background: #151515;
-  color: #f1f1f1;
-  -webkit-transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
-  transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
-}
-
-/* Тёмная тема */
-body.dark-theme {
   background-color: #222;
   color: #f1f1f1;
   -webkit-transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
   transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
-body.dark-theme .theme-toggle {
+body.light-theme .theme-toggle {
   border: 3px solid #f1f1f1;
   -webkit-transition: border 0.4s ease-in-out;
   transition: border 0.4s ease-in-out;
   border-radius: 65px;
 }
 
-body.dark-theme #light-btn {
-  background: #f1f1f1;
+body.light-theme #dark-btn {
+  background: transparent;
+  color: #f1f1f1;
+  -webkit-transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
+}
+
+body.light-theme #light-btn {
   border-radius: 65px;
+  background-color: #f1f1f1;
+  color: #151515;
+}
+
+/* Тёмная тема */
+body.dark-theme {
+  background-color: #e0e0e0;
+  color: #151515;
+  -webkit-transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+body.dark-theme .theme-toggle {
+  border: 3px solid #151515;
+  -webkit-transition: border 0.4s ease-in-out;
+  transition: border 0.4s ease-in-out;
+  border-radius: 65px;
+}
+
+body.dark-theme #light-btn {
+  background: transparent;
   color: #151515;
   -webkit-transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
   transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
+}
+
+body.dark-theme #dark-btn {
+  background-color: #151515;
+  color: #f1f1f1;
+  border-radius: 65px;
 }
 
 /* Общие стили для кнопок */
@@ -532,6 +542,9 @@ body.dark-theme #light-btn {
       -ms-flex: 1;
           flex: 1;
   padding: 10px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
   border: none;
   background: transparent;
   cursor: pointer;

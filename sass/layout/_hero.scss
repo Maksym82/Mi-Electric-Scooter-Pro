@@ -70,44 +70,53 @@
 
 /* Светлая тема */
 body.light-theme {
-  background-color: $color-bg-light;
-  color: $colorBlack;
-  transition: background-color $transition, color $transition;
-}
-
-body.light-theme .theme-toggle {
-  border: 3px solid $colorBlack;
-  transition: border $transition;
-  border-radius: 65px;
-}
-
-body.light-theme #dark-btn {
-  border-radius: 65px;
-  background: $colorBlack;
-  color: $colorWhite;
-  transition: background $transition, color $transition,
-    border-radius $transition;
-}
-
-/* Тёмная тема */
-body.dark-theme {
   background-color: $color-bg-dark;
   color: $colorWhite;
   transition: background-color $transition, color $transition;
 }
 
-body.dark-theme .theme-toggle {
+body.light-theme .theme-toggle {
   border: 3px solid $colorWhite;
   transition: border $transition;
   border-radius: 65px;
 }
 
-body.dark-theme #light-btn {
-  background: $colorWhite;
+body.light-theme #dark-btn {
+  background: transparent;
+  color: $colorWhite;
+  transition: background $transition, color $transition, border-radius $transition;
+}
+
+body.light-theme #light-btn {
   border-radius: 65px;
+  background-color: $colorWhite;
   color: $colorBlack;
-  transition: background $transition, color $transition,
-    border-radius $transition;
+}
+
+/* Тёмная тема */
+body.dark-theme {
+  background-color: $color-bg-light;
+  color: $colorBlack;
+  transition: background-color $transition, color $transition;
+}
+
+body.dark-theme .theme-toggle {
+  border: 3px solid $colorBlack;
+  transition: border $transition;
+  border-radius: 65px;
+}
+
+body.dark-theme #light-btn {
+  background: transparent;
+  // border-radius: 65px;
+  color: $colorBlack;
+  transition: background $transition, color $transition, border-radius $transition;
+}
+
+body.dark-theme #dark-btn {
+  background-color: $colorBlack;
+  color: $colorWhite;
+  border-radius: 65px;
 }
 
 /* Общие стили для кнопок */
@@ -126,6 +135,9 @@ body.dark-theme #light-btn {
 .theme-toggle button {
   flex: 1;
   padding: 10px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
   border: none;
   background: transparent;
   cursor: pointer;

@@ -26,7 +26,7 @@ body.light-theme {
   font-size: 14px;
   line-height: 1.5;
   color: $colorBlack;
-  background-color: $color-bg-light;
+  background-color: $color-bg-dark;
   transition: background-color $transition, color $transition;
 }
 
@@ -35,7 +35,7 @@ body.dark-theme {
   font-size: 14px;
   line-height: 1.5;
   color: $colorWhite;
-  background-color: $color-bg-dark;
+  background-color: $color-bg-light;
   transition: background-color $transition, color $transition;
 }
 
