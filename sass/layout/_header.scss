@@ -66,6 +66,31 @@
   left: 0;
 }
 
+.header__link {
+  display: none;
+
+  @media (min-width: 1440px) {
+    display: block;
+    border-radius: 65px;
+    padding: 15px 35px;
+    margin-left: auto;
+    width: 122px;
+    height: 54px;
+    background-color: $colorWhite;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $colorBlack;
+    cursor: pointer;
+    transition: background-color 0.25s linear;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $colorOrange;
+  }
+}
+
 // Burger menu
 .icon-menu {
   display: none;
