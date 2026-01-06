@@ -31,3 +31,23 @@ darkBtn.addEventListener('click', () => {
   body.classList.add('dark-theme');
   localStorage.setItem('theme', 'dark');
 });
+
+
+const whiteScooter = document.getElementById('white-scooter');
+const blackScooter = document.getElementById('black-scooter');
+// const lightBtn = document.getElementById('light-btn');
+// const darkBtn = document.getElementById('dark-btn');
+
+lightBtn.addEventListener('click', () => {
+  whiteScooter.classList.add('is-active');
+  blackScooter.classList.remove('is-active');
+  lightBtn.setAttribute('aria-pressed', 'true');
+  darkBtn.setAttribute('aria-pressed', 'false');
+});
+
+darkBtn.addEventListener('click', () => {
+  blackScooter.classList.add('is-active');
+  whiteScooter.classList.remove('is-active');
+  darkBtn.setAttribute('aria-pressed', 'true');
+  lightBtn.setAttribute('aria-pressed', 'false');
+});

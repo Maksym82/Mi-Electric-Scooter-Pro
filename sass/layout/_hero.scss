@@ -145,3 +145,15 @@ body.dark-theme #dark-btn {
   transition: background $transition, color $transition,
     border-radius $transition;
 }
+
+.hero__picture {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.9s ease, visibility 0.9s ease;
+}
+
+.hero__picture.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+

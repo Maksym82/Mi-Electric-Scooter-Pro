@@ -551,4 +551,16 @@ body.dark-theme #dark-btn {
   font-size: 18px;
   -webkit-transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
   transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
+}
+
+.hero__picture {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.9s ease, visibility 0.9s ease;
+  transition: opacity 0.9s ease, visibility 0.9s ease;
+}
+
+.hero__picture.is-active {
+  opacity: 1;
+  visibility: visible;
 }/*# sourceMappingURL=main.css.map */
