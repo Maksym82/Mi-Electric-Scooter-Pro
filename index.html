@@ -198,8 +198,8 @@
                   media="(min-width: 1440px)"
                 />
                 <source
-                  srcset="./images/advantages/advantages-desktop1.png"
-                  type="image/png"
+                  srcset="./images/advantages/advantages-desktop1.jpg"
+                  type="image/jpeg"
                   media="(min-width: 1440px)"
                 />
                 <source
@@ -213,8 +213,8 @@
                   media="(min-width: 1440px)"
                 />
                 <source
-                  srcset="./images/advantages/advantages-desktop2.png"
-                  type="image/png"
+                  srcset="./images/advantages/advantages-desktop2.jpg"
+                  type="image/jpeg"
                   media="(min-width: 1440px)"
                 />
                 <!-- Tablet 640–1439 -->
@@ -229,9 +229,26 @@
                   media="(min-width: 640px) and (max-width: 1439px)"
                 />
                 <source
-                  srcset="./images/advantages/advantages-tablet-1.png"
-                  type="image/png"
+                  srcset="./images/advantages/advantages-tablet-1.jpg"
+                  type="image/jpeg"
                   media="(min-width: 640px) and (max-width: 1439px)"
+                />
+                <!-- Mobile max-width: 639px -->
+                <source
+                  srcset="./images/advantages/advantages-mobile-1.avif"
+                  type="image/avif"
+                  media="(max-width: 639px)"
+                />
+                <source
+                  srcset="./images/advantages/advantages-mobile-1.webp"
+                  type="image/webp"
+                  media="(max-width: 639px)"
+                />
+                <!-- Fallback PNG для мобильного -->
+                <img
+                  class="advantages__image"
+                  src="./images/advantages/advantages-mobile-1.jpg"
+                  alt="Парень с девушкой катаются на стильных электросамокатах"
                 />
               </picture>
             </li>
