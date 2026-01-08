@@ -8,6 +8,10 @@
   background-image: url('../images/hero/decor-1.svg');
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: 640px) {
+    padding-bottom: 150px;
+  }
 }
 
 .hero__img-box {
@@ -109,7 +113,6 @@ body.dark-theme .theme-toggle {
 
 body.dark-theme #light-btn {
   background: transparent;
-  // border-radius: 65px;
   color: $colorBlack;
   transition: background $transition, color $transition, border-radius $transition;
 }

@@ -159,6 +159,7 @@ input {
   font-size: 25px;
   line-height: 1.2;
   color: #f1f1f1;
+  margin-bottom: 24px;
 }
 @media (min-width: 640px) {
   .section-title {
@@ -173,6 +174,10 @@ input {
     line-height: 1.1;
     color: #ff4c0d;
   }
+}
+
+body.dark-theme .section-title {
+  color: #151515;
 }
 
 .header {
@@ -401,6 +406,11 @@ input {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (min-width: 640px) {
+  .hero {
+    padding-bottom: 150px;
+  }
+}
 
 .hero__img-box {
   position: relative;
@@ -564,4 +574,46 @@ body.dark-theme #dark-btn {
 .hero__picture.is-active {
   opacity: 1;
   visibility: visible;
+}
+
+.advantages {
+  background-image: url("../images/advantages/advantages-decor.webp");
+  background-repeat: no-repeat;
+}
+
+.advantages__img-desktop {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .advantages__img-desktop {
+    display: block;
+    margin-left: 24px;
+  }
+}
+
+.advantages__item-title {
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #ff4c0d;
+  margin-bottom: 24px;
+}
+
+.advantages__item-title::after {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 0;
+  background-color: #ff4c0d;
+  width: 100px;
+  height: 3px;
+}
+
+.advantages__item-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
 }/*# sourceMappingURL=main.css.map */
