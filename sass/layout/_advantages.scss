@@ -1,8 +1,10 @@
 @use '../utils/variables' as *;
 
 .advantages {
+  padding-top: 50px;
   background-image: url('../images/advantages/advantages-decor.webp');
   background-repeat: no-repeat;
+  background-position-y: center;
 }
 
 .advantages__img-desktop {
