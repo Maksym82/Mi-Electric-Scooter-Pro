@@ -3,6 +3,7 @@
 .advantages {
   position: relative;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .advantages::after {
@@ -10,10 +11,16 @@
   position: absolute;
   top: -300px;
   left: 0;
-  width: 100%;
+  width: 320px;
   height: 50%;
   filter: blur(50px);
   background-image: url('../images/advantages/advantages-decor.webp');
+
+  @media (min-width: 640px) {
+    width: 640px;
+    filter: blur(100px);
+    top: -400px;
+  }
 }
 
 .advantages__img-desktop {
@@ -56,4 +63,15 @@
   display: flex;
   flex-direction: column;
   gap: 26px;
+}
+
+.advantages__img-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__image {
+  display: block;
+  margin: 0 auto;
+  // width: 100%;
 }
