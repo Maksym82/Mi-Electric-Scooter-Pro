@@ -28,7 +28,6 @@
 
   @media (min-width: 1440px) {
     display: block;
-    margin-left: 24px;
   }
 }
 
@@ -74,13 +73,16 @@
   gap: 26px;
 }
 
-.advantages__img-box {
-  display: flex;
-  justify-content: space-between;
+@media (min-width: 1440px) {
+  .advantages__img-box {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .advantages__image {
   display: block;
   margin: 0 auto;
-  // width: 100%;
+  border-radius: 15px;
+  width: 100%;
 }

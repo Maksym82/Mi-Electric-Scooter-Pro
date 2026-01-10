@@ -608,7 +608,6 @@ body.dark-theme #dark-btn {
 @media (min-width: 1440px) {
   .advantages__img-desktop {
     display: block;
-    margin-left: 24px;
   }
 }
 
@@ -661,16 +660,19 @@ body.dark-theme #dark-btn {
   gap: 26px;
 }
 
-.advantages__img-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media (min-width: 1440px) {
+  .advantages__img-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
-
 .advantages__image {
   display: block;
   margin: 0 auto;
+  border-radius: 15px;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
