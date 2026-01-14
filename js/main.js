@@ -32,7 +32,6 @@ darkBtn.addEventListener('click', () => {
   localStorage.setItem('theme', 'dark');
 });
 
-
 const whiteScooter = document.getElementById('white-scooter');
 const blackScooter = document.getElementById('black-scooter');
 // const lightBtn = document.getElementById('light-btn');
@@ -50,4 +49,41 @@ darkBtn.addEventListener('click', () => {
   whiteScooter.classList.remove('is-active');
   darkBtn.setAttribute('aria-pressed', 'true');
   lightBtn.setAttribute('aria-pressed', 'false');
+});
+
+// Tabs
+document.addEventListener('DOMContentLoaded', () => {
+  const tabs = document.querySelectorAll('.advantages__tab');
+  const panels = document.querySelectorAll('.advantages__panel');
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      if (window.innerWidth >= 1440) {
+        const target = tab.dataset.tab;
+
+        // Сброс табов
+        tabs.forEach((t) => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+
+        // Активный таб
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+
+        // Сброс панелей
+        panels.forEach((p) => {
+          p.classList.remove('is-active');
+        });
+
+        // Активная панель
+        const activePanel = document.querySelector(
+          `.advantages__panel[data-panel="${target}"]`
+        );
+        if (activePanel) {
+          activePanel.classList.add('is-active');
+        }
+      }
+    });
+  });
 });
