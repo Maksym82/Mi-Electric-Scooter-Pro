@@ -589,6 +589,7 @@ body.dark-theme #dark-btn {
   left: 0;
   width: 320px;
   height: 50%;
+  z-index: -1;
   -webkit-filter: blur(50px);
           filter: blur(50px);
   background-image: url("../images/advantages/advantages-decor.webp");
@@ -633,6 +634,15 @@ body.dark-theme #dark-btn {
   background-color: #ff4c0d;
   width: 100px;
   height: 3px;
+}
+@media (min-width: 640px) {
+  .advantages__item-title::after {
+    top: 35px;
+  }
+}
+
+body.light-theme .advantages__item-title {
+  color: #f1f1f1;
 }
 
 .advantages__item-text {
