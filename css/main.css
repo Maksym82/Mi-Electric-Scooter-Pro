@@ -771,4 +771,35 @@ body.light-theme .advantages__item-title {
     max-width: 100%;
     display: block;
   }
+}
+
+/* Мобилка и планшет */
+@media (max-width: 1439px) {
+  .advantages__tabs {
+    display: none;
+  } /* скрываем табы */
+  .advantages__item {
+    margin-bottom: 2rem;
+  }
+  .advantages__tab-title {
+    font-size: 1.2rem;
+  }
+  .advantages__tab-text {
+    margin: 0.5rem 0 1rem;
+  }
+  .advantages__tab-image {
+    width: 100%;
+    height: auto;
+  }
+}
+/* Десктоп */
+@media (min-width: 1440px) {
+  .advantages__item {
+    display: none;
+  } /* скрываем линейные блоки */
+  .advantages__tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }/*# sourceMappingURL=main.css.map */
