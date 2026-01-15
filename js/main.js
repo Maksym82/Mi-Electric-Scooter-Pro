@@ -6,6 +6,8 @@ document.addEventListener('click', (e) => {
   }
 });
 
+
+// === Переключение тем ===
 const body = document.body;
 const lightBtn = document.getElementById('light-btn');
 const darkBtn = document.getElementById('dark-btn');
@@ -34,8 +36,6 @@ darkBtn.addEventListener('click', () => {
 
 const whiteScooter = document.getElementById('white-scooter');
 const blackScooter = document.getElementById('black-scooter');
-// const lightBtn = document.getElementById('light-btn');
-// const darkBtn = document.getElementById('dark-btn');
 
 lightBtn.addEventListener('click', () => {
   whiteScooter.classList.add('is-active');
@@ -51,7 +51,7 @@ darkBtn.addEventListener('click', () => {
   lightBtn.setAttribute('aria-pressed', 'false');
 });
 
-// Tabs
+// === Tabs ===
 document.addEventListener('DOMContentLoaded', () => {
   const tabs = document.querySelectorAll('.advantages__tab');
   const panels = document.querySelectorAll('.advantages__panel');
