@@ -96,6 +96,16 @@ body.light-theme .advantages__item-title {
   width: 100%;
 }
 
+@media (min-width: 1440px) {
+  .advantages__tab-title-desktop {
+    display: none;
+  }
+
+  .advantages__tab-text-desktop {
+    display: none;
+  }
+}
+
 // ==================
 
 .advantages {
@@ -230,5 +240,6 @@ body.light-theme .advantages__item-title {
   } /* скрываем линейные блоки */
   .advantages__tabs {
     display: flex;
+    margin-bottom: 30px;
   }
 }
