@@ -723,9 +723,6 @@ body.light-theme .advantages__item-title {
   .advantages__tab-title {
     color: #f1f1f1;
   }
-  .advantages__tab-title body.dark-theme .advantages__tab-title {
-    color: #151515;
-  }
 }
 .advantages__tab-title::after {
   content: "";
@@ -807,6 +804,15 @@ body.light-theme .advantages__item-title {
     max-width: 100%;
     display: block;
   }
+}
+
+@media (min-width: 1440px) {
+  body.dark-theme .advantages__tab-title {
+    color: #151515;
+  }
+}
+body.dark-theme .advantages__tab-title::after {
+  background: #151515;
 }
 
 /* Мобилка и планшет */

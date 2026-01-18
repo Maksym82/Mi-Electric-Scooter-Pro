@@ -133,10 +133,6 @@ body.light-theme .advantages__item-title {
 
     @media (min-width: 1440px) {
       color: $colorWhite;
-
-      body.dark-theme .advantages__tab-title {
-        color: $colorBlack;
-      }
     }
 
     &::after {
@@ -175,7 +171,6 @@ body.light-theme .advantages__item-title {
     &__tabs {
       flex-direction: row;
       justify-content: space-between;
-      // gap: 32px;
     }
 
     &__tab {
@@ -211,6 +206,16 @@ body.light-theme .advantages__item-title {
       }
     }
   }
+}
+
+@media (min-width: 1440px) {
+  body.dark-theme .advantages__tab-title {
+    color: $colorBlack;
+  }
+}
+
+body.dark-theme .advantages__tab-title::after {
+  background: $colorBlack;
 }
 
 /* Мобилка и планшет */
