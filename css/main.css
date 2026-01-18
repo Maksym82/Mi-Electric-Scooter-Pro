@@ -811,10 +811,11 @@ body.light-theme .advantages__item-title {
     color: #151515;
   }
 }
-body.dark-theme .advantages__tab-title::after {
-  background: #151515;
+@media (min-width: 1440px) {
+  body.dark-theme .advantages__tab-title::after {
+    background: #151515;
+  }
 }
-
 /* Мобилка и планшет */
 @media (max-width: 1439px) {
   .advantages__tabs {

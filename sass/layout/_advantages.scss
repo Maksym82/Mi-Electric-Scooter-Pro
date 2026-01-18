@@ -214,8 +214,10 @@ body.light-theme .advantages__item-title {
   }
 }
 
-body.dark-theme .advantages__tab-title::after {
-  background: $colorBlack;
+@media (min-width: 1440px) {
+  body.dark-theme .advantages__tab-title::after {
+    background: $colorBlack;
+  }
 }
 
 /* Мобилка и планшет */
