@@ -16,9 +16,18 @@
     background-image: image-set(
       '../images/banner/banner-tablet.avif' type('image/avif'),
       '../images/banner/banner-tablet.webp' type('image/webp'),
-      '../images/banner/banner-tablet.avif' type('image/jpeg')
+      '../images/banner/banner-tablet.jpeg' type('image/jpeg')
     );
     height: 100%;
+  }
+
+  @media (min-width: 1440px) {
+    background-image: image-set(
+      '../images/banner/banner-desktop.avif' type('image/avif'),
+      '../images/banner/banner-desktop.webp' type('image/webp'),
+      '../images/banner/banner-desktop.jpeg' type('image/jpeg')
+    );
+    height: 600px;
   }
 }
 
@@ -33,6 +42,8 @@
 
 .banner__logo {
   padding-top: 20px;
+  width: 46px;
+  height: 30px;
 
   @media (min-width: 640px) {
     padding-top: 40px;
