@@ -914,6 +914,11 @@ body.light-theme .advantages__item-title {
     width: 300px;
   }
 }
+@media (min-width: 1440px) {
+  .banner__title {
+    width: 400px;
+  }
+}
 
 body.dark-theme .banner__title,
 body.dark-theme .banner__text {

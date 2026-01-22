@@ -59,6 +59,10 @@
   @media (min-width: 640px) {
     width: 300px;
   }
+
+  @media (min-width: 1440px) {
+    width: 400px;
+  }
 }
 
 body.dark-theme .banner__title,
