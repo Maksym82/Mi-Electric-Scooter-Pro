@@ -917,6 +917,7 @@ body.light-theme .advantages__item-title {
 @media (min-width: 1440px) {
   .banner__title {
     width: 400px;
+    color: #f1f1f1;
   }
 }
 
