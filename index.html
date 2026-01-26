@@ -500,11 +500,42 @@
         </div>
       </section>
       <!-- Design -->
-       <section class="design">
+      <section class="design">
         <div class="design__container">
-          <h2 class="">Лаконичный современный дизайн, в котором нет ничего лишнего</h2>
+          <h2 class="">
+            Лаконичный современный дизайн, в котором нет ничего лишнего
+          </h2>
+          <ul class="design__list">
+            <li class="design__item">
+              <!-- Mobile max-width: 639px -->
+              <picture>
+                <source
+                  srcset="./images/design/design-mobile-1.avif"
+                  type="image/avif"
+                  media="(max-width: 639px)"
+                />
+                <source
+                  src="./images/design/design-mobile-1.webp"
+                  type="image/webp"
+                  media="(max-width: 639px)"
+                />
+                <!-- Fallback JPG для мобильного -->
+                <img
+                  class="design__image"
+                  src="./images/design/design-mobile-1.jpg"
+                  alt="Стильный современный электросамокат"
+                />
+              </picture>
+              <h3 class="design__card-title">Минималистичный дизайн</h3>
+              <p class="design__description">
+                Рама, компоненты и аксессуары скутера выдержаны в едином стиле,
+                где удобство пользователя выходит на первое место. Одного
+                прикосновения достаточно, чтобы запустить самокат.
+              </p>
+            </li>
+          </ul>
         </div>
-       </section>
+      </section>
     </main>
 
     <script src="./js/main.js"></script>
