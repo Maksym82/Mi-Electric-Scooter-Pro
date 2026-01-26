@@ -502,10 +502,11 @@
       <!-- Design -->
       <section class="design">
         <div class="design__container">
-          <h2 class="">
+          <h2 class="section-title design__title">
             Лаконичный современный дизайн, в котором нет ничего лишнего
           </h2>
           <ul class="design__list">
+            <!-- Item #1 -->
             <li class="design__item">
               <!-- Mobile max-width: 639px -->
               <picture>
@@ -515,7 +516,7 @@
                   media="(max-width: 639px)"
                 />
                 <source
-                  src="./images/design/design-mobile-1.webp"
+                  srcset="./images/design/design-mobile-1.webp"
                   type="image/webp"
                   media="(max-width: 639px)"
                 />
@@ -531,6 +532,34 @@
                 Рама, компоненты и аксессуары скутера выдержаны в едином стиле,
                 где удобство пользователя выходит на первое место. Одного
                 прикосновения достаточно, чтобы запустить самокат.
+              </p>
+            </li>
+            <!-- Item #2 -->
+            <li class="design__item">
+              <!-- Mobile max-width: 639px -->
+              <picture>
+                <source
+                  srcset="./images/design/design-mobile-2.avif"
+                  type="image/avif"
+                  media="(max-width: 639px)"
+                />
+                <source
+                  srcset="./images/design/design-mobile-2.webp"
+                  type="image/webp"
+                  media="(max-width: 639px)"
+                />
+                <!-- Fallback JPG для мобильного -->
+                <img
+                  class="design__image"
+                  src="./images/design/design-mobile-2.jpg"
+                  alt="Стильный современный электросамокат"
+                />
+              </picture>
+              <h3 class="design__card-title">Удобная панель управления</h3>
+              <p class="design__description">
+                Удобно расположенные элементы управления. Отображение 8 типов
+                данных в реальном времени: скорость, режим, заряд аккумулятора,
+                состояние блокировки и другая информация.
               </p>
             </li>
           </ul>

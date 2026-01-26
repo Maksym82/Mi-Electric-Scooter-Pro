@@ -945,4 +945,45 @@ body.dark-theme .banner__text {
 .banner__box {
   position: relative;
   z-index: 1;
+}
+
+.design {
+  padding: 60px 0;
+  background-image: url("../../images/design/design-decor.webp");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.design__title {
+  width: 278px;
+}
+
+.design__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 28px;
+}
+
+.design__image {
+  margin-bottom: 16px;
+}
+
+.design__card-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #f1f1f1;
+  margin-bottom: 12px;
+}
+
+.design__description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #f1f1f1;
 }/*# sourceMappingURL=main.css.map */
