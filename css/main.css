@@ -866,6 +866,7 @@ body.light-theme .advantages__item-title {
   background-image: image-set("../images/banner/banner-mobile.avif" type("image/avif"), "../images/banner/banner-mobile.webp" type("image/webp"), "../images/banner/banner-mobile.jpeg" type("image/jpeg"));
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
   height: 420px;
 }
 @media (min-width: 640px) {
@@ -952,6 +953,7 @@ body.dark-theme .banner__text {
   background-image: url("../../images/design/design-decor.webp");
   background-repeat: no-repeat;
   background-position: top;
+  background-size: 100%;
 }
 
 .design__title {
@@ -970,7 +972,14 @@ body.dark-theme .banner__text {
 }
 
 .design__image {
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
+  display: block;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.design__image-tablet {
+  display: none;
 }
 
 .design__card-title {

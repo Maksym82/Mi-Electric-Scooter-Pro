@@ -508,8 +508,24 @@
           <ul class="design__list">
             <!-- Item #1 -->
             <li class="design__item">
-              <!-- Mobile max-width: 639px -->
               <picture>
+                <!-- Tablet 640–1439 -->
+                <source
+                  srcset="./images/design/design-tablet-1.avif"
+                  type="image/avif"
+                  media="(min-width: 640px) and (max-width: 1439px)"
+                />
+                <source
+                  srcset="./images/design/design-tablet-1.webp"
+                  type="image/webp"
+                  media="(min-width: 640px) and (max-width: 1439px)"
+                />
+                <img
+                  class="design__image-tablet"
+                  src="./images/design/design-tablet-1.jpg"
+                  alt="Стильный современный электросамокат"
+                />
+                <!-- Mobile max-width: 639px -->
                 <source
                   srcset="./images/design/design-mobile-1.avif"
                   type="image/avif"
