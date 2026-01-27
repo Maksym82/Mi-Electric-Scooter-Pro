@@ -35,6 +35,10 @@
   line-height: 1.2;
   color: $colorWhite;
   margin-bottom: 12px;
+
+  @media (min-width: 640px) {
+    font-size: 20px;
+  }
 }
 
 .design__description {
@@ -42,4 +46,9 @@
   font-size: 12px;
   line-height: 1.7;
   color: $colorWhite;
+
+  @media (min-width: 640px) {
+    font-size: 14px;
+    line-height: 1.6;
+  }
 }

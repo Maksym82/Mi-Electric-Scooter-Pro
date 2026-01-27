@@ -989,10 +989,21 @@ body.dark-theme .banner__text {
   color: #f1f1f1;
   margin-bottom: 12px;
 }
+@media (min-width: 640px) {
+  .design__card-title {
+    font-size: 20px;
+  }
+}
 
 .design__description {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.7;
   color: #f1f1f1;
+}
+@media (min-width: 640px) {
+  .design__description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
 }/*# sourceMappingURL=main.css.map */
