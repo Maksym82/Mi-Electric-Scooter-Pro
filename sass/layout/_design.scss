@@ -10,12 +10,25 @@
 
 .design__title {
   width: 278px;
+
+  @media (min-width: 640px) {
+    width: 500px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 760px;
+    margin-bottom: 40px;
+  }
 }
 
 .design__list {
   display: flex;
   flex-direction: column;
   gap: 28px;
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
+  }
 }
 
 .design__image {
@@ -41,7 +54,7 @@
   }
 }
 
-body.dark-theme .design__card-title  {
+body.dark-theme .design__card-title {
   color: $colorBlack;
 }
 
@@ -53,10 +66,10 @@ body.dark-theme .design__card-title  {
 
   @media (min-width: 640px) {
     font-size: 14px;
-    line-height: 1.6
+    line-height: 1.6;
   }
 }
 
 body.dark-theme .design__description {
- color: $colorBlack; 
+  color: $colorBlack;
 }
