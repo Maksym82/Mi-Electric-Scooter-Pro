@@ -31,6 +31,27 @@
   }
 }
 
+@media (min-width: 640px) {
+  .design__item:first-child {
+    position: relative;
+    height: 550px;
+  }
+
+  .design__item:first-child::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 411px;
+    border-radius: 15px;
+    background-image: url('../images/design/design-bg-dark.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+  }
+}
+
 .design__image {
   margin: 0 auto 16px;
   display: block;
@@ -40,6 +61,16 @@
 
 .design__image-tablet {
   display: none;
+}
+
+@media (min-width: 640px) {
+  .disign__text-box {
+    position: absolute;
+    bottom: 30px;
+    z-index: 1;
+    width: 420px;
+    left: 80px;
+  }
 }
 
 .design__card-title {
