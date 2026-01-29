@@ -992,8 +992,9 @@ body.dark-theme .banner__text {
 }
 
 @media (min-width: 640px) {
-  .design__item:first-child {
+  .design__item {
     position: relative;
+    width: 100%;
     height: 550px;
   }
   .design__item:first-child::after {
@@ -1001,7 +1002,7 @@ body.dark-theme .banner__text {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 411px;
+    height: 292px;
     border-radius: 15px;
     background-image: url("../images/design/design-bg-dark.webp");
     background-repeat: no-repeat;
@@ -1026,8 +1027,8 @@ body.dark-theme .banner__text {
     position: absolute;
     bottom: 30px;
     z-index: 1;
-    width: 420px;
-    left: 80px;
+    width: 440px;
+    left: 40px;
   }
 }
 .design__card-title {
