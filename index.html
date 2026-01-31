@@ -188,7 +188,9 @@
               class="advantages__tab active"
               role="tab"
               aria-selected="true"
+              aria-controls="panel-speed"
               data-tab="speed"
+              id="tab-speed"
             >
               <h3 class="advantages__tab-title">Три режима скорости</h3>
               <p class="advantages__tab-text">
@@ -203,7 +205,9 @@
               class="advantages__tab"
               role="tab"
               aria-selected="false"
+              aria-controls="panel-energy"
               data-tab="energy"
+              id="tab-energy"
             >
               <h3 class="advantages__tab-title">
                 Система восстановления энергии
@@ -219,7 +223,9 @@
               class="advantages__tab"
               role="tab"
               aria-selected="false"
+              aria-controls="panel-battery"
               data-tab="battery"
+              id="tab-battery"
             >
               <h3 class="advantages__tab-title">Мощная батарея</h3>
               <p class="advantages__tab-text">
@@ -232,7 +238,13 @@
           <!-- Контент картинок -->
           <div class="advantages__content">
             <!-- Item #1 -->
-            <div class="advantages__panel is-active" data-panel="speed">
+            <div
+              class="advantages__panel is-active"
+              data-panel="speed"
+              role="tabpanel"
+              id="panel-speed"
+              aria-labelledby="tab-speed"
+            >
               <h3 class="advantages__tab-title advantages__tab-title-desktop">
                 Три режима скорости
               </h3>
@@ -315,7 +327,13 @@
               </div>
             </div>
             <!-- Item #2 -->
-            <div class="advantages__panel" data-panel="energy">
+            <div
+              class="advantages__panel"
+              data-panel="energy"
+              role="tabpanel"
+              id="panel-energy"
+              aria-labelledby="tab-energy"
+            >
               <h3 class="advantages__tab-title advantages__tab-title-desktop">
                 Система восстановления энергии
               </h3>
@@ -397,7 +415,13 @@
               </div>
             </div>
             <!-- Item #3 -->
-            <div class="advantages__panel" data-panel="battery">
+            <div
+              class="advantages__panel"
+              data-panel="battery"
+              role="tabpanel"
+              id="panel-battery"
+              aria-labelledby="tab-battery"
+            >
               <h3 class="advantages__tab-title advantages__tab-title-desktop">
                 Мощная батарея
               </h3>
@@ -520,10 +544,11 @@
                   type="image/webp"
                   media="(min-width: 640px)"
                 />
-                <img
+                <source
                   class="design__image-tablet"
-                  src="./images/design/design-tablet-1.jpg"
-                  alt="Стильный современный электросамокат"
+                  srcset="./images/design/design-tablet-1.jpg"
+                  type="image/jpeg"
+                  media="(min-width: 640px)"
                 />
                 <!-- Mobile max-width: 639px -->
                 <source
@@ -567,10 +592,11 @@
                   type="image/webp"
                   media="(min-width: 640px)"
                 />
-                <img
+                <source
                   class="design__image-tablet"
-                  src="./images/design/design-tablet-2.jpg"
-                  alt="Стильный современный электросамокат"
+                  srcset="./images/design/design-tablet-2.jpg"
+                  type="image/jpeg"
+                  media="(min-width: 640px)"
                 />
                 <!-- Mobile max-width: 639px -->
                 <source

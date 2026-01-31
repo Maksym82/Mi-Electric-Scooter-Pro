@@ -1044,10 +1044,6 @@ body.dark-theme .banner__text {
   }
 }
 
-body.dark-theme .design__card-title {
-  color: #151515;
-}
-
 .design__description {
   font-weight: 400;
   font-size: 12px;
@@ -1059,8 +1055,4 @@ body.dark-theme .design__card-title {
     font-size: 14px;
     line-height: 1.6;
   }
-}
-
-body.dark-theme .design__description {
-  color: #151515;
 }/*# sourceMappingURL=main.css.map */
