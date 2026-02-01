@@ -433,7 +433,6 @@ body.dark-theme .section-title {
   position: absolute;
   right: -20px;
   display: block;
-  justify-self: center;
 }
 @media (min-width: 640px) {
   .hero__image {
@@ -1044,6 +1043,11 @@ body.dark-theme .banner__text {
   }
 }
 
+@media (max-width: 639px) {
+  body.dark-theme .design__card-title {
+    color: #151515;
+  }
+}
 .design__description {
   font-weight: 400;
   font-size: 12px;
@@ -1054,5 +1058,11 @@ body.dark-theme .banner__text {
   .design__description {
     font-size: 14px;
     line-height: 1.6;
+  }
+}
+
+@media (max-width: 639px) {
+  body.dark-theme .design__description {
+    color: #151515;
   }
 }/*# sourceMappingURL=main.css.map */
