@@ -58,44 +58,68 @@
             <picture id="white-scooter" class="hero__picture">
               <!-- Desktop 1440px -->
               <source
-                srcset="./images/hero/white-bike/hero-white-bike-desktop.avif"
+                srcset="
+                  ./images/hero/white-bike/hero-white-bike-desktop.avif    1x,
+                  ./images/hero/white-bike/hero-white-bike-desktop@2x.avif 2x
+                "
                 type="image/avif"
                 media="(min-width: 1440px)"
               />
               <source
-                srcset="./images/hero/white-bike/hero-white-bike-desktop.webp"
+                srcset="
+                  ./images/hero/white-bike/hero-white-bike-desktop.webp    1x,
+                  ./images/hero/white-bike/hero-white-bike-desktop@2x.webp 2x
+                "
                 type="image/webp"
                 media="(min-width: 1440px)"
               />
               <source
-                srcset="./images/hero/white-bike/hero-white-bike-desktop.png"
+                srcset="
+                  ./images/hero/white-bike/hero-white-bike-desktop.png    1x,
+                  ./images/hero/white-bike/hero-white-bike-desktop@2x.png 2x
+                "
                 type="image/png"
                 media="(min-width: 1440px)"
               />
               <!-- Tablet 640–1439 -->
               <source
-                srcset="./images/hero/white-bike/hero-white-bike-tablet.avif"
+                srcset="
+                  ./images/hero/white-bike/hero-white-bike-tablet.avif    1x,
+                  ./images/hero/white-bike/hero-white-bike-tablet@2x.avif 2x
+                "
                 type="image/avif"
                 media="(min-width: 640px) and (max-width: 1439px)"
               />
               <source
-                srcset="./images/hero/white-bike/hero-white-bike-tablet.webp"
+                srcset="
+                  ./images/hero/white-bike/hero-white-bike-tablet.webp    1x,
+                  ./images/hero/white-bike/hero-white-bike-tablet@2x.webp 2x
+                "
                 type="image/webp"
                 media="(min-width: 640px) and (max-width: 1439px)"
               />
               <source
-                srcset="./images/hero/white-bike/hero-white-bike-tablet.png"
+                srcset="
+                  ./images/hero/white-bike/hero-white-bike-tablet.png    1x,
+                  ./images/hero/white-bike/hero-white-bike-tablet@2x.png 2x
+                "
                 type="image/png"
                 media="(min-width: 640px) and (max-width: 1439px)"
               />
               <!-- Mobile max-width: 639px -->
               <source
-                srcset="./images/hero/white-bike/hero-white-bike-mobile.avif"
+                srcset="
+                  ./images/hero/white-bike/hero-white-bike-mobile.avif    1x,
+                  ./images/hero/white-bike/hero-white-bike-mobile@2x.avif 2x
+                "
                 type="image/avif"
                 media="(max-width: 639px)"
               />
               <source
-                srcset="./images/hero/white-bike/hero-white-bike-mobile.webp"
+                srcset="
+                  ./images/hero/white-bike/hero-white-bike-mobile.webp    1x,
+                  ./images/hero/white-bike/hero-white-bike-mobile@2x.webp 2x
+                "
                 type="image/webp"
                 media="(max-width: 639px)"
               />
@@ -103,6 +127,10 @@
               <img
                 class="hero__image"
                 src="./images/hero/white-bike/hero-white-bike-mobile.png"
+                srcset="
+                  ./images/hero/white-bike/hero-white-bike-mobile.png    1x,
+                  ./images/hero/white-bike/hero-white-bike-mobile@2x.png 2x
+                "
                 alt="Стильный электросамокат с мощным аккумулятором"
               />
             </picture>
@@ -507,8 +535,12 @@
       <!-- Banner -->
       <section class="banner">
         <div class="banner__container">
-          <a class="logo banner__logo" href="./index.html" aria-label="Перейти к баннеру на главной">
-            <svg class="header__logo">
+          <a
+            class="logo banner__logo"
+            href="./index.html"
+            aria-label="Перейти к баннеру на главной"
+          >
+            <svg class="header__logo banner__logo">
               <use href="./images/icons.svg#icon-logo"></use>
             </svg>
           </a>

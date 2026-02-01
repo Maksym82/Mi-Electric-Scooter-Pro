@@ -216,7 +216,7 @@ body.dark-theme .section-title {
 .header__logo {
   width: 46px;
   height: 30px;
-  fill: #ff4c0d;
+  color: #ff4c0d;
 }
 @media (min-width: 640px) {
   .header__logo {
@@ -896,7 +896,7 @@ body.light-theme .advantages__item-title {
 
 .banner__logo {
   padding-top: 20px;
-  fill: #f1f1f1;
+  color: #f1f1f1;
 }
 @media (min-width: 640px) {
   .banner__logo {
