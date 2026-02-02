@@ -431,8 +431,9 @@ body.dark-theme .section-title {
 
 .hero__image {
   position: absolute;
+  width: 100%;
+  height: auto;
   right: -20px;
-  display: block;
 }
 @media (min-width: 640px) {
   .hero__image {
