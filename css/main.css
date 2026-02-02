@@ -868,12 +868,14 @@ body.light-theme .advantages__item-title {
   background-size: 100%;
   height: 420px;
   padding-bottom: 30px;
+  padding-top: 20px;
 }
 @media (min-width: 640px) {
   .banner {
     background-image: -webkit-image-set("../images/banner/banner-tablet.avif" type("image/avif"), "../images/banner/banner-tablet.webp" type("image/webp"), "../images/banner/banner-tablet.jpeg" type("image/jpeg"));
     background-image: image-set("../images/banner/banner-tablet.avif" type("image/avif"), "../images/banner/banner-tablet.webp" type("image/webp"), "../images/banner/banner-tablet.jpeg" type("image/jpeg"));
     height: 100%;
+    padding-top: 40px;
   }
 }
 @media (min-width: 1440px) {
@@ -881,6 +883,7 @@ body.light-theme .advantages__item-title {
     background-image: -webkit-image-set("../images/banner/banner-desktop.avif" type("image/avif"), "../images/banner/banner-desktop.webp" type("image/webp"), "../images/banner/banner-desktop.jpeg" type("image/jpeg"));
     background-image: image-set("../images/banner/banner-desktop.avif" type("image/avif"), "../images/banner/banner-desktop.webp" type("image/webp"), "../images/banner/banner-desktop.jpeg" type("image/jpeg"));
     height: 600px;
+    padding-top: 120px;
   }
 }
 
@@ -893,23 +896,11 @@ body.light-theme .advantages__item-title {
   height: 244px;
 }
 
-.banner__logo {
-  padding-top: 20px;
+.banner__logo > .header__logo {
   color: #f1f1f1;
-}
-@media (min-width: 640px) {
-  .banner__logo {
-    padding-top: 40px;
-  }
-}
-@media (min-width: 1440px) {
-  .banner__logo {
-    padding-top: 120px;
-  }
 }
 
 .banner__title {
-  padding-top: 225px;
   margin-bottom: 15px;
 }
 @media (min-width: 640px) {
@@ -945,6 +936,7 @@ body.dark-theme .banner__text {
 
 .banner__box {
   position: relative;
+  padding-top: 225px;
   z-index: 1;
 }
 
