@@ -1059,6 +1059,14 @@ body.dark-theme .banner__text {
     color: #151515;
   }
 }
+.safety {
+  padding: 50px 0;
+}
+
 .safety__tab-title {
   width: 100%;
+}
+
+.safety__tab-text {
+  padding-right: 30px;
 }/*# sourceMappingURL=main.css.map */

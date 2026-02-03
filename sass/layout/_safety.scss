@@ -1,5 +1,13 @@
 @use '../utils/variables' as *;
 
+.safety {
+  padding: 50px 0;
+}
+
 .safety__tab-title {
   width: 100%;
+}
+
+.safety__tab-text {
+  padding-right: 30px;
 }
