@@ -1069,4 +1069,22 @@ body.dark-theme .banner__text {
 
 .safety__tab-text {
   padding-right: 30px;
+}
+
+@media (min-width: 1440px) {
+  .advantages__images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 24px;
+  }
+  .advantages__images picture img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */
