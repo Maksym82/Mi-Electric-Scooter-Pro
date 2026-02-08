@@ -1060,7 +1060,7 @@ body.dark-theme .banner__text {
   }
 }
 .safety {
-  padding-bottom: 50px;
+  padding: 50px 0;
 }
 
 .safety__tab-title {
