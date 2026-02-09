@@ -52,38 +52,31 @@ darkBtn.addEventListener('click', () => {
 });
 
 // === Tabs ===
-document.addEventListener('DOMContentLoaded', () => {
-  const tabs = document.querySelectorAll('.advantages__tab');
-  const panels = document.querySelectorAll('.advantages__panel');
+document.querySelectorAll('section').forEach(section => {
+  const tabs = section.querySelectorAll('.advantages__tab');
+  const panels = section.querySelectorAll('.advantages__panel');
 
-  tabs.forEach((tab) => {
-    tab.addEventListener('click', () => {
-      if (window.innerWidth >= 1440) {
-        const target = tab.dataset.tab;
-
-        // Сброс табов
-        tabs.forEach((t) => {
+  if (tabs.length && panels.length) {
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Снимаем активность только внутри этой секции
+        tabs.forEach(t => {
           t.classList.remove('active');
           t.setAttribute('aria-selected', 'false');
         });
+        panels.forEach(p => p.classList.remove('is-active'));
 
-        // Активный таб
+        // Активируем выбранный таб
         tab.classList.add('active');
         tab.setAttribute('aria-selected', 'true');
 
-        // Сброс панелей
-        panels.forEach((p) => {
-          p.classList.remove('is-active');
-        });
-
-        // Активная панель
-        const activePanel = document.querySelector(
-          `.advantages__panel[data-panel="${target}"]`
-        );
-        if (activePanel) {
-          activePanel.classList.add('is-active');
+        const target = tab.getAttribute('data-tab');
+        const panel = section.querySelector(`[data-panel="${target}"]`);
+        if (panel) {
+          panel.classList.add('is-active');
         }
-      }
+      });
     });
-  });
+  }
 });
+
