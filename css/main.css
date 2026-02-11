@@ -811,9 +811,8 @@ body.light-theme .advantages__item-title {
     gap: 24px;
   }
   .advantages .advantages__images picture img {
-    width: auto;
+    max-width: 760px;
     height: auto;
-    max-width: 100%;
     display: block;
   }
 }
