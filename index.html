@@ -1276,6 +1276,52 @@
           </div>
         </div>
       </section>
+      <!-- App -->
+      <section class="app">
+        <div class="app__container">
+          <div class="app__content">
+            <h2 class="section-title app__title">
+              Мобильное приложение Mi Home
+            </h2>
+            <p class="app__text">
+              Подключите самокат к мобильному приложению Mi Home и используйте
+              его для блокировки и разблокировки самоката, а так же просмотра
+              основных данных: пробег, скорость, уровень заряда аккумулятора.
+            </p>
+            <div class="app__links">
+              <img src="./images/app/apple-store.svg" alt="icon apple store" />
+              <img src="./images/app/google-play.svg" alt="icon google store" />
+            </div>
+          </div>
+          <picture>
+            <!-- Mobile max-width: 639px -->
+            <source
+              srcset="
+                ./images/app/app-mobile.avif    1x,
+                ./images/app/app-mobile@2x.avif 2x
+              "
+              type="image/avif"
+              media="(max-width: 639px)"
+            />
+            <source
+              srcset="
+                ./images/app/app-mobile.webp    1x,
+                ./images/app/app-mobile@2x.webp 2x
+              "
+              type="image/webp"
+              media="(max-width: 639px)"
+            />
+            <source
+              srcset="
+                ./images/app/app-mobile.jpeg    1x,
+                ./images/app/app-mobile@2x.jpeg 2x
+              "
+              type="image/jpeg"
+              media="(max-width: 639px)"
+            />
+          </picture>
+        </div>
+      </section>
     </main>
 
     <script src="./js/main.js"></script>

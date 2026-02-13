@@ -1086,4 +1086,30 @@ body.dark-theme .banner__text {
     max-width: 100%;
     display: block;
   }
+}
+.app {
+  padding-bottom: 50px;
+}
+
+.app__content {
+  margin-bottom: 30px;
+}
+
+.app__title {
+  color: #ff4c0d;
+}
+
+.app__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+}
+
+.app__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
 }/*# sourceMappingURL=main.css.map */
