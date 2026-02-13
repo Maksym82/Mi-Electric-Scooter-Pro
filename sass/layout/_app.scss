@@ -1,15 +1,33 @@
 @use '../utils/variables' as *;
 
-.app {
-  padding-bottom: 50px;
-}
+// .app {
+//   padding-bottom: 50px;
+// }
 
 .app__content {
   margin-bottom: 30px;
+
+  @media (min-width: 640px) {
+    margin-bottom: 0;
+    padding-top: 30px;
+    width: 270px;
+  }
+}
+
+@media (min-width: 640px) {
+  .app__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
 }
 
 .app__title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.2;
   color: $colorOrange;
+  margin-bottom: 24px;
 }
 
 .app__text {
@@ -23,4 +41,10 @@
 .app__links {
   display: flex;
   gap: 12px;
+}
+
+.app__image {
+  display: block;
+  width: 220px;
+  margin: 0 auto;
 }

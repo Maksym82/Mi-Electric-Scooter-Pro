@@ -1278,9 +1278,9 @@
       </section>
       <!-- App -->
       <section class="app">
-        <div class="app__container">
+        <div class="app__container app__box">
           <div class="app__content">
-            <h2 class="section-title app__title">
+            <h2 class="app__title">
               Мобильное приложение Mi Home
             </h2>
             <p class="app__text">
@@ -1294,6 +1294,10 @@
             </div>
           </div>
           <picture>
+            <!-- Desktop 1440px -->
+             <source
+
+             >
             <!-- Mobile max-width: 639px -->
             <source
               srcset="
@@ -1301,7 +1305,7 @@
                 ./images/app/app-mobile@2x.avif 2x
               "
               type="image/avif"
-              media="(max-width: 639px)"
+              media="(max-width: 1339px)"
             />
             <source
               srcset="
@@ -1309,15 +1313,17 @@
                 ./images/app/app-mobile@2x.webp 2x
               "
               type="image/webp"
-              media="(max-width: 639px)"
+              media="(max-width: 1339px)"
             />
-            <source
+            <!-- Fallback JPG для мобильного -->
+            <img
+              class="app__image"
+              src="./images/app/app-mobile.jpg"
               srcset="
                 ./images/app/app-mobile.jpeg    1x,
                 ./images/app/app-mobile@2x.jpeg 2x
               "
-              type="image/jpeg"
-              media="(max-width: 639px)"
+              alt="Смартфон с приложением для электросамоката"
             />
           </picture>
         </div>
