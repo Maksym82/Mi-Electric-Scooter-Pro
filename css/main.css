@@ -861,8 +861,8 @@ body.light-theme .advantages__item-title {
 .banner {
   position: relative;
   background-image: url("../images/banner/banner-mobile.jpg");
-  background-image: -webkit-image-set("../images/banner/banner-mobile.avif" type("image/avif"), "../images/banner/banner-mobile.webp" type("image/webp"), "../images/banner/banner-mobile.jpeg" type("image/jpeg"));
-  background-image: image-set("../images/banner/banner-mobile.avif" type("image/avif"), "../images/banner/banner-mobile.webp" type("image/webp"), "../images/banner/banner-mobile.jpeg" type("image/jpeg"));
+  background-image: -webkit-image-set("../images/banner/banner-mobile.avif" type('image/avif'), "../images/banner/banner-mobile.webp" type('image/webp'), "../images/banner/banner-mobile.jpeg" type('image/jpeg'));
+  background-image: image-set("../images/banner/banner-mobile.avif" type('image/avif'), "../images/banner/banner-mobile.webp" type('image/webp'), "../images/banner/banner-mobile.jpeg" type('image/jpeg'));
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -872,16 +872,16 @@ body.light-theme .advantages__item-title {
 }
 @media (min-width: 640px) {
   .banner {
-    background-image: -webkit-image-set("../images/banner/banner-tablet.avif" type("image/avif"), "../images/banner/banner-tablet.webp" type("image/webp"), "../images/banner/banner-tablet.jpeg" type("image/jpeg"));
-    background-image: image-set("../images/banner/banner-tablet.avif" type("image/avif"), "../images/banner/banner-tablet.webp" type("image/webp"), "../images/banner/banner-tablet.jpeg" type("image/jpeg"));
+    background-image: -webkit-image-set("../images/banner/banner-tablet.avif" type('image/avif'), "../images/banner/banner-tablet.webp" type('image/webp'), "../images/banner/banner-tablet.jpeg" type('image/jpeg'));
+    background-image: image-set("../images/banner/banner-tablet.avif" type('image/avif'), "../images/banner/banner-tablet.webp" type('image/webp'), "../images/banner/banner-tablet.jpeg" type('image/jpeg'));
     height: 100%;
     padding-top: 40px;
   }
 }
 @media (min-width: 1440px) {
   .banner {
-    background-image: -webkit-image-set("../images/banner/banner-desktop.avif" type("image/avif"), "../images/banner/banner-desktop.webp" type("image/webp"), "../images/banner/banner-desktop.jpeg" type("image/jpeg"));
-    background-image: image-set("../images/banner/banner-desktop.avif" type("image/avif"), "../images/banner/banner-desktop.webp" type("image/webp"), "../images/banner/banner-desktop.jpeg" type("image/jpeg"));
+    background-image: -webkit-image-set("../images/banner/banner-desktop.avif" type('image/avif'), "../images/banner/banner-desktop.webp" type('image/webp'), "../images/banner/banner-desktop.jpeg" type('image/jpeg'));
+    background-image: image-set("../images/banner/banner-desktop.avif" type('image/avif'), "../images/banner/banner-desktop.webp" type('image/webp'), "../images/banner/banner-desktop.jpeg" type('image/jpeg'));
     height: 600px;
     padding-top: 120px;
   }
@@ -1095,6 +1095,7 @@ body.dark-theme .banner__text {
     margin-bottom: 0;
     padding-top: 30px;
     width: 270px;
+    width: 310px;
   }
 }
 
@@ -1116,6 +1117,12 @@ body.dark-theme .banner__text {
   color: #ff4c0d;
   margin-bottom: 24px;
 }
+@media (min-width: 640px) {
+  .app__title {
+    font-size: 30px;
+    line-height: 1.1;
+  }
+}
 
 .app__text {
   font-weight: 400;
@@ -1136,4 +1143,10 @@ body.dark-theme .banner__text {
   display: block;
   width: 220px;
   margin: 0 auto;
+  border-radius: 60px 60px 0 0;
+}
+@media (min-width: 1440px) {
+  .app__image {
+    width: 400px;
+  }
 }/*# sourceMappingURL=main.css.map */
