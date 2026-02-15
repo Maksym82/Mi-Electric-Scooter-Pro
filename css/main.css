@@ -1093,7 +1093,7 @@ body.dark-theme .banner__text {
 
 .app::before {
   position: absolute;
-  top: 50px;
+  top: -160px;
   right: 0;
   content: "";
   width: 620px;
@@ -1107,6 +1107,15 @@ body.dark-theme .banner__text {
           filter: blur(180px);
   background: linear-gradient(120deg, #fc501f 0%, rgba(252, 80, 31, 0) 100%);
   z-index: -1;
+}
+@media (min-width: 1440px) {
+  .app::before {
+    top: 48px;
+    -webkit-filter: blur(170px);
+            filter: blur(170px);
+    width: 850px;
+    right: 150px;
+  }
 }
 
 .app__content {
