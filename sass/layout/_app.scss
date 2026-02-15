@@ -1,8 +1,33 @@
 @use '../utils/variables' as *;
 
-// .app {
-//   padding-bottom: 50px;
-// }
+.app {
+  position: relative;
+}
+
+.app::before {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  content: '';
+  width: 620px;
+  height: 530px;
+  background-image: -webkit-image-set(
+    '../images/app/app-decor-ellipse.avif' type('image/avif'),
+    '../images/app/app-decor-ellipse.webp' type('image/webp'),
+    '../images/app/app-decor-ellipse.png' type('image/png')
+  );
+  background-image: image-set(
+    '../images/app/app-decor-ellipse.avif' type('image/avif'),
+    '../images/app/app-decor-ellipse.webp' type('image/webp'),
+    '../images/app/app-decor-ellipse.png' type('image/png')
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  filter: blur(180px);
+  background: linear-gradient(120deg, #fc501f 0%, rgba(252, 80, 31, 0) 100%);
+  z-index: -1;
+}
 
 .app__content {
   margin-bottom: 30px;
@@ -26,6 +51,11 @@
     display: flex;
     justify-content: space-between;
     gap: 24px;
+
+    @media (min-width: 1440px) {
+      justify-content: left;
+      gap: 58px;
+    }
   }
 }
 
@@ -57,6 +87,9 @@
   @media (min-width: 640px) {
     font-size: 14px;
     margin-bottom: 34px;
+  }
+
+  @media (min-width: 1440px) {
     padding-right: 192px;
   }
 }

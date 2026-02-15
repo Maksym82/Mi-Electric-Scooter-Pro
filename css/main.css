@@ -1087,6 +1087,28 @@ body.dark-theme .banner__text {
     display: block;
   }
 }
+.app {
+  position: relative;
+}
+
+.app::before {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  content: "";
+  width: 620px;
+  height: 530px;
+  background-image: -webkit-image-set("../images/app/app-decor-ellipse.avif" type('image/avif'), "../images/app/app-decor-ellipse.webp" type('image/webp'), "../images/app/app-decor-ellipse.png" type('image/png'));
+  background-image: image-set("../images/app/app-decor-ellipse.avif" type('image/avif'), "../images/app/app-decor-ellipse.webp" type('image/webp'), "../images/app/app-decor-ellipse.png" type('image/png'));
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  -webkit-filter: blur(180px);
+          filter: blur(180px);
+  background: linear-gradient(120deg, #fc501f 0%, rgba(252, 80, 31, 0) 100%);
+  z-index: -1;
+}
+
 .app__content {
   margin-bottom: 30px;
 }
@@ -1115,6 +1137,14 @@ body.dark-theme .banner__text {
         -ms-flex-pack: justify;
             justify-content: space-between;
     gap: 24px;
+  }
+}
+@media (min-width: 640px) and (min-width: 1440px) {
+  .app__box {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    gap: 58px;
   }
 }
 .app__title {
@@ -1148,6 +1178,10 @@ body.dark-theme .banner__text {
   .app__text {
     font-size: 14px;
     margin-bottom: 34px;
+  }
+}
+@media (min-width: 1440px) {
+  .app__text {
     padding-right: 192px;
   }
 }
