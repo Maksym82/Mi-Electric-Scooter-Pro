@@ -15,7 +15,16 @@
   height: 50%;
   z-index: -1;
   filter: blur(50px);
-  background-image: url('../images/advantages/advantages-decor.webp');
+  background-image: -webkit-image-set(
+    '../images/advantages/advantages-decor.avif' type('image/avif'),
+    '../images/advantages/advantages-decor.webp' type('image/webp'),
+    '../images/advantages/advantages-decor.png' type('image/png')
+  );
+  background-image: image-set(
+    '../images/advantages/advantages-decor.avif' type('image/avif'),
+    '../images/advantages/advantages-decor.webp' type('image/webp'),
+    '../images/advantages/advantages-decor.png' type('image/png')
+  );
 
   @media (min-width: 640px) {
     width: 640px;
