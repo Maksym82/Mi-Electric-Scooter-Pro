@@ -39,7 +39,16 @@
 .banner::after {
   content: '';
   position: absolute;
-  background-image: url('../images/banner/bg-banner.webp');
+  background-image: -webkit-image-set(
+    '../images/banner/bg-banner.avif' type('image/avif'),
+    '../images/banner/bg-banner.webp' type('image/webp'),
+    '../images/banner/bg-banner.png' type('image/png')
+  );
+  background-image: image-set(
+    '../images/banner/bg-banner.avif' type('image/avif'),
+    '../images/banner/bg-banner.webp' type('image/webp'),
+    '../images/banner/bg-banner.png' type('image/png')
+  );
   bottom: 0;
   width: 100%;
   height: 244px;

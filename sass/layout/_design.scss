@@ -3,6 +3,16 @@
 .design {
   padding: 60px 0;
   background-image: url('../images/design/design-decor.webp');
+  background-image: -webkit-image-set(
+    '../images/design/design-decor.avif' type('image/avif'),
+    '../images/design/design-decor.webp' type('image/webp'),
+    '../images/design/design-decor.png' type('image/png')
+  );
+  background-image: image-set(
+    '../images/design/design-decor.avif' type('image/avif'),
+    '../images/design/design-decor.webp' type('image/webp'),
+    '../images/design/design-decor.png' type('image/png')
+  );
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;

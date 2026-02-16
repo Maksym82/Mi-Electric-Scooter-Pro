@@ -891,7 +891,8 @@ body.light-theme .advantages__item-title {
 .banner::after {
   content: "";
   position: absolute;
-  background-image: url("../images/banner/bg-banner.webp");
+  background-image: -webkit-image-set("../images/banner/bg-banner.avif" type('image/avif'), "../images/banner/bg-banner.webp" type('image/webp'), "../images/banner/bg-banner.png" type('image/png'));
+  background-image: image-set("../images/banner/bg-banner.avif" type('image/avif'), "../images/banner/bg-banner.webp" type('image/webp'), "../images/banner/bg-banner.png" type('image/png'));
   bottom: 0;
   width: 100%;
   height: 244px;
@@ -944,6 +945,8 @@ body.dark-theme .banner__text {
 .design {
   padding: 60px 0;
   background-image: url("../images/design/design-decor.webp");
+  background-image: -webkit-image-set("../images/design/design-decor.avif" type('image/avif'), "../images/design/design-decor.webp" type('image/webp'), "../images/design/design-decor.png" type('image/png'));
+  background-image: image-set("../images/design/design-decor.avif" type('image/avif'), "../images/design/design-decor.webp" type('image/webp'), "../images/design/design-decor.png" type('image/png'));
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
