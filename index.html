@@ -1347,6 +1347,112 @@
           </picture>
         </div>
       </section>
+      <!-- About -->
+      <section class="about">
+        <div class="about__container">
+          <a
+            class="logo banner__logo"
+            href="./index.html"
+            aria-label="Перейти к баннеру на главной"
+          >
+            <svg class="header__logo">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <picture>
+            <!-- Desktop 1440px -->
+            <source
+              srcset="
+                ./images/about/about-desktop.avif    1x,
+                ./images/about/about-desktop@2x.avif 2x
+              "
+              type="image/avif"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="
+                ./images/about/about-desktop.webp    1x,
+                ./images/about/about-desktop@2x.webp 2x
+              "
+              type="image/webp"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="
+                ./images/about/about-desktop.jpg    1x,
+                ./images/about/about-desktop@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 1440px)"
+            />
+            <!-- Tablet 640–1439 -->
+            <source
+              srcset="
+                ./images/about/about-tablet.avif    1x,
+                ./images/about/about-tablet@2x.avif 2x
+              "
+              type="image/avif"
+              media="(min-width: 640px)"
+            />
+            <source
+              srcset="
+                ./images/about/about-tablet.webp    1x,
+                ./images/about/about-tablet@2x.webp 2x
+              "
+              type="image/webp"
+              media="(min-width: 640px)"
+            />
+            <source
+              srcset="
+                ./images/about/about-tablet.jpg    1x,
+                ./images/about/about-tablet@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 640px)"
+            />
+            <!-- Mobile max-width: 639px -->
+            <source
+              srcset="
+                ./images/about/about-mobile.avif    1x,
+                ./images/about/about-mobile@2x.avif 2x
+              "
+              type="image/avif"
+              media="(max-width: 639px)"
+            />
+            <source
+              srcset="
+                ./images/about/about-mobile.webp    1x,
+                ./images/about/about-mobile@2x.webp 2x
+              "
+              type="image/webp"
+              media="(max-width: 639px)"
+            />
+            <!-- Fallback PNG для мобильного -->
+            <img
+              class="about__image"
+              src="./images/about/about-mobile.jpg"
+              srcset="
+                ./images/about/about-mobile.jpg    1x,
+                ./images/about/about-mobile@2x.jpg 2x
+              "
+              width="320"
+              height="384"
+              fetchpriority="high"
+              decoding="async"
+              alt="Три сотрудника компании Xiaomi работают"
+            />
+          </picture>
+          <div class="about__content">
+            <h2 class="section-title about__title">О бренде Xiaomi</h2>
+            <p class="about__text">
+              Компания Xiaomi была основана предпринимателем Лей Цзюнем в 2010
+              году под девизом - «Инновации для всех». Мы верим, что
+              высококачественные продукты и передовые технологии должны быть
+              доступны каждому.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="./js/main.js"></script>
