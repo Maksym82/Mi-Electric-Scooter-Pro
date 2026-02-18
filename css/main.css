@@ -1235,6 +1235,11 @@ body.dark-theme .banner__text {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (min-width: 640px) {
+  .about::before {
+    display: none;
+  }
+}
 
 .about__image {
   display: block;
@@ -1249,10 +1254,26 @@ body.dark-theme .banner__text {
   text-align: left;
   max-width: 280px;
 }
+@media (min-width: 640px) {
+  .about__content {
+    top: 38%;
+    max-width: 317px;
+    color: #151515;
+  }
+}
 
 .about__logo {
   position: absolute;
   top: 30px;
+}
+
+.about__title {
+  color: #f1f1f1;
+}
+@media (min-width: 640px) {
+  .about__title {
+    color: #ff4c0d;
+  }
 }
 
 .about__text {
@@ -1260,4 +1281,11 @@ body.dark-theme .banner__text {
   font-size: 12px;
   line-height: 1.7;
   letter-spacing: -0.01em;
+}
+@media (min-width: 640px) {
+  .about__text {
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+  }
 }/*# sourceMappingURL=main.css.map */

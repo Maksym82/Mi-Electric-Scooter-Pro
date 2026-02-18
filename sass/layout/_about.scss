@@ -24,6 +24,10 @@
   );
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: 640px) {
+    display: none;
+  }
 }
 
 .about__image {
@@ -37,7 +41,13 @@
   position: absolute;
   top: 60%;
   text-align: left;
-  max-width: 280px; 
+  max-width: 280px;
+
+  @media (min-width: 640px) {
+    top: 38%;
+    max-width: 317px;
+    color: $colorBlack;
+  }
 }
 
 .about__logo {
@@ -45,9 +55,23 @@
   top: 30px;
 }
 
+.about__title {
+  color: $colorWhite;
+
+  @media (min-width: 640px) {
+    color: $colorOrange;
+  }
+}
+
 .about__text {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.7;
   letter-spacing: -0.01em;
+
+  @media (min-width: 640px) {
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+  }
 }
