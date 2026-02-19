@@ -1221,6 +1221,8 @@ body.dark-theme .banner__text {
 .about {
   position: relative;
   padding-bottom: 70px;
+  background-image: url("../images/about/about-bg.png");
+  z-index: 1;
 }
 
 .about::before {
@@ -1241,6 +1243,21 @@ body.dark-theme .banner__text {
   }
 }
 
+@media (min-width: 1440px) {
+  .about::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 428px;
+    height: 607px;
+    background-image: -webkit-image-set("../images/about/about-decor-left.avif" type('image/avif'), "../images/about/about-decor-left.webp" type('image/webp'), "../images/about/about-decor-left.png" type('image/png'));
+    background-image: image-set("../images/about/about-decor-left.avif" type('image/avif'), "../images/about/about-decor-left.webp" type('image/webp'), "../images/about/about-decor-left.png" type('image/png'));
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+}
 .about__image {
   display: block;
   height: auto;
