@@ -2,9 +2,8 @@
 
 .about {
   position: relative;
-  // background-image: url('../images/about/about-bg.png');
   z-index: 1;
-  // background: rgba(232, 181, 119, 0.7);
+  background: linear-gradient(to right, #f0f0f0 0%, #f0f0f0 49%, rgba(240,240,240,0) 51%, transparent 100%);
 }
 
 .about::before {
@@ -39,7 +38,7 @@
     top: 0;
     left: 0;
     width: 428px;
-    height: 607px;
+    height: 100%;
     background-image: -webkit-image-set(
       '../images/about/about-decor-left.avif' type('image/avif'),
       '../images/about/about-decor-left.webp' type('image/webp'),
@@ -51,7 +50,7 @@
       '../images/about/about-decor-left.png' type('image/png')
     );
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     z-index: -1;
   }
 }
@@ -76,6 +75,7 @@
   }
 
   @media (min-width: 1440px) {
+    top: 50%;
     max-width: 460px;
     line-height: 1.5;
   }
@@ -84,6 +84,14 @@
 .about__logo {
   position: absolute;
   top: 30px;
+
+  @media (min-width: 640px) {
+    top: 40px;
+  }
+
+  @media (min-width: 1440px) {
+    top: 120px;
+  }
 }
 
 .about__title {

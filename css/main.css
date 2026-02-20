@@ -1155,9 +1155,9 @@ body.dark-theme .banner__text {
 }
 @media (min-width: 640px) and (min-width: 1440px) {
   .app__box {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 58px;
   }
 }
@@ -1222,6 +1222,8 @@ body.dark-theme .banner__text {
 .about {
   position: relative;
   z-index: 1;
+  background: -webkit-gradient(linear, left top, right top, from(#f0f0f0), color-stop(49%, #f0f0f0), color-stop(51%, rgba(240, 240, 240, 0)), to(transparent));
+  background: linear-gradient(to right, #f0f0f0 0%, #f0f0f0 49%, rgba(240, 240, 240, 0) 51%, transparent 100%);
 }
 
 .about::before {
@@ -1249,11 +1251,11 @@ body.dark-theme .banner__text {
     top: 0;
     left: 0;
     width: 428px;
-    height: 607px;
+    height: 100%;
     background-image: -webkit-image-set("../images/about/about-decor-left.avif" type('image/avif'), "../images/about/about-decor-left.webp" type('image/webp'), "../images/about/about-decor-left.png" type('image/png'));
     background-image: image-set("../images/about/about-decor-left.avif" type('image/avif'), "../images/about/about-decor-left.webp" type('image/webp'), "../images/about/about-decor-left.png" type('image/png'));
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     z-index: -1;
   }
 }
@@ -1279,6 +1281,7 @@ body.dark-theme .banner__text {
 }
 @media (min-width: 1440px) {
   .about__content {
+    top: 50%;
     max-width: 460px;
     line-height: 1.5;
   }
@@ -1287,6 +1290,16 @@ body.dark-theme .banner__text {
 .about__logo {
   position: absolute;
   top: 30px;
+}
+@media (min-width: 640px) {
+  .about__logo {
+    top: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .about__logo {
+    top: 120px;
+  }
 }
 
 .about__title {
