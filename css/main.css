@@ -885,6 +885,7 @@ body.light-theme .advantages__item-title {
     background-image: image-set("../images/banner/banner-desktop.avif" type('image/avif'), "../images/banner/banner-desktop.webp" type('image/webp'), "../images/banner/banner-desktop.jpeg" type('image/jpeg'));
     height: 600px;
     padding-top: 120px;
+    background-size: auto;
   }
 }
 
@@ -1220,8 +1221,6 @@ body.dark-theme .banner__text {
 
 .about {
   position: relative;
-  padding-bottom: 70px;
-  background-image: url("../images/about/about-bg.png");
   z-index: 1;
 }
 
@@ -1267,15 +1266,21 @@ body.dark-theme .banner__text {
 
 .about__content {
   position: absolute;
-  top: 60%;
+  top: 50%;
   text-align: left;
   max-width: 280px;
 }
 @media (min-width: 640px) {
   .about__content {
-    top: 38%;
+    top: 43%;
     max-width: 317px;
     color: #151515;
+  }
+}
+@media (min-width: 1440px) {
+  .about__content {
+    max-width: 460px;
+    line-height: 1.5;
   }
 }
 
