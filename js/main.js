@@ -6,7 +6,6 @@ document.addEventListener('click', (e) => {
   }
 });
 
-
 // === Переключение тем ===
 const body = document.body;
 const lightBtn = document.getElementById('light-btn');
@@ -52,19 +51,19 @@ darkBtn.addEventListener('click', () => {
 });
 
 // === Tabs ===
-document.querySelectorAll('section').forEach(section => {
+document.querySelectorAll('section').forEach((section) => {
   const tabs = section.querySelectorAll('.advantages__tab');
   const panels = section.querySelectorAll('.advantages__panel');
 
   if (tabs.length && panels.length) {
-    tabs.forEach(tab => {
+    tabs.forEach((tab) => {
       tab.addEventListener('click', () => {
         // Снимаем активность только внутри этой секции
-        tabs.forEach(t => {
+        tabs.forEach((t) => {
           t.classList.remove('active');
           t.setAttribute('aria-selected', 'false');
         });
-        panels.forEach(p => p.classList.remove('is-active'));
+        panels.forEach((p) => p.classList.remove('is-active'));
 
         // Активируем выбранный таб
         tab.classList.add('active');
@@ -80,3 +79,15 @@ document.querySelectorAll('section').forEach(section => {
   }
 });
 
+// === Swiper ===
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
