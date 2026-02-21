@@ -1221,15 +1221,12 @@ body.dark-theme .banner__text {
 
 .about {
   position: relative;
-  z-index: 1;
-  background: -webkit-gradient(linear, left top, right top, from(#f0f0f0), color-stop(49%, #f0f0f0), color-stop(51%, rgba(240, 240, 240, 0)), to(transparent));
-  background: linear-gradient(to right, #f0f0f0 0%, #f0f0f0 49%, rgba(240, 240, 240, 0) 51%, transparent 100%);
 }
 
 .about::before {
   content: "";
   position: absolute;
-  bottom: -42px;
+  bottom: -7px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -1268,7 +1265,7 @@ body.dark-theme .banner__text {
 
 .about__content {
   position: absolute;
-  top: 50%;
+  top: 43%;
   text-align: left;
   max-width: 280px;
 }
@@ -1311,6 +1308,15 @@ body.dark-theme .banner__text {
   }
 }
 
+body.dark-theme .about__title {
+  color: #f1f1f1;
+}
+@media (min-width: 640px) {
+  body.dark-theme .about__title {
+    color: #ff4c0d;
+  }
+}
+
 .about__text {
   font-weight: 400;
   font-size: 12px;
@@ -1323,4 +1329,8 @@ body.dark-theme .banner__text {
     line-height: 1.6;
     letter-spacing: 0.4px;
   }
+}
+
+body.dark-theme .about__text {
+  color: #f1f1f1;
 }/*# sourceMappingURL=main.css.map */
