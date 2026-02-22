@@ -1372,4 +1372,43 @@ body.dark-theme .about__text {
   line-height: 1.7;
   letter-spacing: -0.01em;
   color: #f1f1f1;
+}
+
+.arrows-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.my-prev,
+.my-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.icon-left,
+.icon-right {
+  color: chocolate;
+  width: 7px;
+  height: 14px;
 }/*# sourceMappingURL=main.css.map */

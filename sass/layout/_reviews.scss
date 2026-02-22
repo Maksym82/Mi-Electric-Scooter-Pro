@@ -39,4 +39,29 @@
   color: $colorWhite;
 }
 
+.arrows-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
 
+.my-prev,
+.my-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: $colorWhite;
+  cursor: pointer;
+}
+
+.icon-left,
+.icon-right {
+  color: chocolate;
+  width: 7px;
+  height: 14px;
+}
