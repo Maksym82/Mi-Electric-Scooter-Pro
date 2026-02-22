@@ -3,3 +3,40 @@
 .reviews {
   padding: 60px 0;
 }
+
+.reviews__card {
+  border-radius: 15px;
+  width: 280px;
+  height: 337px;
+  padding: 25px;
+  background-color: $colorBlack;
+}
+
+.reviews__card-title {
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $colorWhite;
+  margin-bottom: 34px;
+}
+
+.reviews__card-title::after {
+  content: '';
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background: $colorOrange;
+}
+
+.reviews__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  color: $colorWhite;
+}
+
+
