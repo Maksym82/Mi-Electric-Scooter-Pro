@@ -4,12 +4,25 @@
   padding: 60px 0;
 }
 
+.reviews__container {
+  overflow: hidden; // скрываем лишнее
+}
+.swiper {
+  overflow: visible; // разрешаем карточкам выглядывать
+}
+
+
+
 .reviews__card {
   border-radius: 15px;
   width: 280px;
   height: 337px;
   padding: 25px;
   background-color: $colorBlack;
+
+  @media (min-width: 640px) {
+    width: 370px;
+  }
 }
 
 .reviews__card-title {
@@ -19,6 +32,10 @@
   line-height: 1.2;
   color: $colorWhite;
   margin-bottom: 34px;
+
+  @media (min-width: 640px) {
+    font-size: 20px;
+  }
 }
 
 .reviews__card-title::after {
@@ -29,6 +46,10 @@
   width: 100px;
   height: 3px;
   background: $colorOrange;
+
+  @media (min-width: 640px) {
+    width: 150px;
+  }
 }
 
 .reviews__text {
@@ -37,6 +58,11 @@
   line-height: 1.7;
   letter-spacing: -0.01em;
   color: $colorWhite;
+
+  @media (min-width: 640px) {
+    font-size: 14px;
+    line-height: 1.6;
+  }
 }
 
 .arrows-box {

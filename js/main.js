@@ -85,6 +85,21 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+
+  breakpoints: {
+    // when window width is >= 768px
+    640: {
+      slidesPerView: 1.5,
+      spaceBetween: 38,
+    },
+    // when window width is >= 1280px
+    1280: {
+      slidesPerView: 2,
+      spaceBetween: 18,
+    },
+  },
 
   // Navigation arrows
   navigation: {
