@@ -1336,7 +1336,29 @@ body.dark-theme .about__text {
 }
 
 .reviews {
+  position: relative;
   padding: 60px 0;
+}
+
+.reviews::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 0;
+  width: 526px;
+  height: 528px;
+  background-image: -webkit-image-set("../images/reviews/reviews-decor.avif" type('image/avif'), "../images/reviews/reviews-decor.webp" type('image/webp'), "../images/reviews/reviews-decor.png" type('image/png'));
+  background-image: image-set("../images/reviews/reviews-decor.avif" type('image/avif'), "../images/reviews/reviews-decor.webp" type('image/webp'), "../images/reviews/reviews-decor.png" type('image/png'));
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  -webkit-filter: blur(120px);
+          filter: blur(120px);
+}
+@media (min-width: 640px) {
+  .reviews::after {
+    right: -72px;
+  }
 }
 
 .swiper {
@@ -1344,13 +1366,13 @@ body.dark-theme .about__text {
 }
 
 .swiper-slide {
-  width: 370px; /* фиксируем ширину слайда */
+  width: 370px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; /* чтобы карточка внутри была по центру */
+          justify-content: center;
 }
 
 .reviews__card {
@@ -1410,6 +1432,30 @@ body.dark-theme .about__text {
   }
 }
 
+.reviews__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 14px;
+  margin-top: 16px;
+}
+@media (min-width: 640px) {
+  .reviews__box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 34px;
+  }
+}
+
 .arrows-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1421,7 +1467,6 @@ body.dark-theme .about__text {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 12px;
-  margin-top: 20px;
 }
 
 .my-prev,
@@ -1440,16 +1485,37 @@ body.dark-theme .about__text {
   border-radius: 50%;
   background-color: #f1f1f1;
   cursor: pointer;
+  -webkit-transition: background-color 0.25s linear;
+  transition: background-color 0.25s linear;
 }
 
-.icon-left,
-.icon-right {
-  fill: chocolate;
-  width: 50%;
-  height: 50%;
+.my-prev:hover,
+.my-next:hover {
+  background-color: #ff4c0d;
 }
 
-.icon-left:hover,
-.icon-right:hover {
-  color: chartreuse;
+.reviews__button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 65px;
+  padding: 15px 35px;
+  width: 280px;
+  height: 54px;
+  background-color: #f1f1f1;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #151515;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+@media (min-width: 640px) {
+  .reviews__button {
+    margin: 0;
+  }
+}
+
+.reviews__button:hover {
+  background-color: #ff4c0d;
+  color: #f1f1f1;
 }/*# sourceMappingURL=main.css.map */

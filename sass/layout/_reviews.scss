@@ -1,7 +1,35 @@
 @use '../utils/variables' as *;
 
 .reviews {
+  position: relative;
   padding: 60px 0;
+}
+
+.reviews::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: 0;
+  width: 526px;
+  height: 528px;
+  background-image: -webkit-image-set(
+    '../images/reviews/reviews-decor.avif' type('image/avif'),
+    '../images/reviews/reviews-decor.webp' type('image/webp'),
+    '../images/reviews/reviews-decor.png' type('image/png')
+  );
+  background-image: image-set(
+    '../images/reviews/reviews-decor.avif' type('image/avif'),
+    '../images/reviews/reviews-decor.webp' type('image/webp'),
+    '../images/reviews/reviews-decor.png' type('image/png')
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  filter: blur(120px);
+
+  @media (min-width: 640px) {
+    right: -72px;
+  }
 }
 
 .swiper {
@@ -9,11 +37,10 @@
 }
 
 .swiper-slide {
-  width: 370px; /* фиксируем ширину слайда */
+  width: 370px;
   display: flex;
-  justify-content: center; /* чтобы карточка внутри была по центру */
+  justify-content: center;
 }
-
 
 .reviews__card {
   border-radius: 15px;
@@ -25,7 +52,6 @@
   @media (min-width: 640px) {
     width: 100%;
     max-width: 370px;
-
   }
 }
 
@@ -69,12 +95,24 @@
   }
 }
 
+.reviews__box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 16px;
+
+  @media (min-width: 640px) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 34px;
+  }
+}
+
 .arrows-box {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
-  margin-top: 20px;
 }
 
 .my-prev,
@@ -87,16 +125,34 @@
   border-radius: 50%;
   background-color: $colorWhite;
   cursor: pointer;
+  transition: background-color 0.25s linear;
 }
 
-.icon-left,
-.icon-right {
-  fill: chocolate;
-  width: 50%;
-  height: 50%;
+.my-prev:hover,
+.my-next:hover {
+  background-color: $colorOrange;
 }
 
-.icon-left:hover,
-.icon-right:hover {
-  color: chartreuse;
+.reviews__button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 65px;
+  padding: 15px 35px;
+  width: 280px;
+  height: 54px;
+  background-color: $colorWhite;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #151515;
+  transition: all 0.25s linear;
+
+  @media (min-width: 640px) {
+    margin: 0;
+  }
+}
+
+.reviews__button:hover {
+  background-color: $colorOrange;
+  color: $colorWhite;
 }
