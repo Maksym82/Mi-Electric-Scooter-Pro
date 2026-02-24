@@ -86,13 +86,15 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   slidesPerView: 1,
+  centeredSlides: true,
   spaceBetween: 20,
 
   breakpoints: {
     // when window width is >= 768px
     640: {
-      slidesPerView: 1.5,
-      spaceBetween: 38,
+      slidesPerView: 1,
+      centeredSlides: true,
+      spaceBetween: 30,
     },
     // when window width is >= 1280px
     1280: {

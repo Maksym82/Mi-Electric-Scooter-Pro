@@ -4,24 +4,28 @@
   padding: 60px 0;
 }
 
-.reviews__container {
-  overflow: hidden; // скрываем лишнее
-}
 .swiper {
-  overflow: visible; // разрешаем карточкам выглядывать
+  width: 100%;
 }
 
+.swiper-slide {
+  width: 370px; /* фиксируем ширину слайда */
+  display: flex;
+  justify-content: center; /* чтобы карточка внутри была по центру */
+}
 
 
 .reviews__card {
   border-radius: 15px;
-  width: 280px;
+  width: 100%;
   height: 337px;
   padding: 25px;
   background-color: $colorBlack;
 
   @media (min-width: 640px) {
-    width: 370px;
+    width: 100%;
+    max-width: 370px;
+
   }
 }
 
@@ -87,7 +91,12 @@
 
 .icon-left,
 .icon-right {
-  color: chocolate;
-  width: 7px;
-  height: 14px;
+  fill: chocolate;
+  width: 50%;
+  height: 50%;
+}
+
+.icon-left:hover,
+.icon-right:hover {
+  color: chartreuse;
 }
