@@ -1340,6 +1340,12 @@ body.dark-theme .about__text {
   padding: 60px 0;
 }
 
+@media (min-width: 1280px) {
+  .reviews__container {
+    max-width: 1280px;
+    padding: 0 40px;
+  }
+}
 .reviews::after {
   content: "";
   position: absolute;
@@ -1355,11 +1361,6 @@ body.dark-theme .about__text {
   -webkit-filter: blur(120px);
           filter: blur(120px);
 }
-@media (min-width: 640px) {
-  .reviews::after {
-    right: -72px;
-  }
-}
 
 .swiper {
   width: 100%;
@@ -1374,10 +1375,15 @@ body.dark-theme .about__text {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (min-width: 1280px) {
+  .swiper-slide {
+    width: 460px !important;
+  }
+}
 
 .reviews__card {
   border-radius: 15px;
-  width: 100%;
+  max-width: 100%;
   height: 337px;
   padding: 25px;
   background-color: #151515;

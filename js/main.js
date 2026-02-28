@@ -90,7 +90,7 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 20,
 
   breakpoints: {
-    // when window width is >= 768px
+    // when window width is >= 640px
     640: {
       slidesPerView: 1,
       centeredSlides: true,
@@ -99,7 +99,7 @@ const swiper = new Swiper('.swiper', {
     // when window width is >= 1280px
     1280: {
       slidesPerView: 2,
-      spaceBetween: 18,
+      // spaceBetween: 18,
     },
   },
 
