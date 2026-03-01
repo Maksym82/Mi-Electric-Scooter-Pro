@@ -12,6 +12,13 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .reviews__container {
+    max-width: 1440px;
+    padding: 0 40px;
+  }
+}
+
 .reviews::after {
   content: '';
   position: absolute;
@@ -40,13 +47,13 @@
 }
 
 .swiper-slide {
-  width: 370px;
+  width: auto;
   display: flex;
   justify-content: center;
 
-  @media (min-width: 1280px) {
-    width: 460px !important;
-  }
+  // @media (min-width: 1280px) {
+  //   width: 460px !important;
+  // }
 }
 
 .reviews__card {

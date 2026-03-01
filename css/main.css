@@ -1346,6 +1346,12 @@ body.dark-theme .about__text {
     padding: 0 40px;
   }
 }
+@media (min-width: 1440px) {
+  .reviews__container {
+    max-width: 1440px;
+    padding: 0 40px;
+  }
+}
 .reviews::after {
   content: "";
   position: absolute;
@@ -1367,18 +1373,13 @@ body.dark-theme .about__text {
 }
 
 .swiper-slide {
-  width: 370px;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-@media (min-width: 1280px) {
-  .swiper-slide {
-    width: 460px !important;
-  }
 }
 
 .reviews__card {
