@@ -50,10 +50,6 @@
   width: auto;
   display: flex;
   justify-content: center;
-
-  // @media (min-width: 1280px) {
-  //   width: 460px !important;
-  // }
 }
 
 .reviews__card {
@@ -169,4 +165,167 @@
 .reviews__button:hover {
   background-color: $colorOrange;
   color: $colorWhite;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.modal.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__content {
+  background: linear-gradient(
+    90deg,
+    rgba(212, 111, 74, 1) 0%,
+    rgba(179, 48, 48, 1) 32%,
+    rgba(134, 90, 75, 1) 66%
+  );
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+
+  transform: translateY(-50px);
+  transition: transform 0.3s ease;
+}
+
+.modal.is-active .modal__content {
+  transform: translateY(0);
+}
+
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal__title-reviews {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.form__reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.reviews__label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.reviews__input {
+  height: 36px;
+  border-radius: 4px;
+  outline: none;
+  background: rgb(186, 134, 134);
+  padding: 5px 5px 5px 16px;
+  color: $colorBlack;
+  font-size: 16px;
+}
+
+.reviews__textarea {
+  min-height: 120px;
+  border-radius: 4px;
+  outline: none;
+  background: rgb(186, 134, 134);
+  padding: 5px 5px 5px 16px;
+  color: $colorBlack;
+  font-size: 16px;
+  resize: none;
+}
+
+.reviews__modal-button {
+  font-size: 20px;
+  font-weight: 600;
+  transition: color 0.25s linear;
+}
+
+.reviews__modal-button:hover,
+.reviews__modal-button:focus {
+  color: $colorBlack;
+}
+
+.reviews__modal-button:active {
+  color: $colorOrange;
+}
+
+// Popup
+
+.thankyou {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.thankyou.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.thankyou__content {
+  background: #7c2a2a;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease;
+}
+
+.thankyou.is-active .thankyou__content {
+  transform: translateY(0);
+}
+
+.thankyou__close {
+  margin-top: 15px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #f36c21;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.thankyou__close:hover {
+  background: #d95a15;
+}
+
+.thankyou__text {
+  font-size: 24px;
+  font-weight: 600;
 }

@@ -110,3 +110,56 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.my-prev',
   },
 });
+
+// === Modal reviews ===
+
+const reviewBtn = document.querySelector('.reviews__button');
+const modal = document.getElementById('review-modal');
+const closeBtn = modal.querySelector('.modal__close');
+const form = document.getElementById('review-form');
+
+const thankyouPopup = document.getElementById('thankyou-popup');
+const thankyouClose = thankyouPopup.querySelector('.thankyou__close');
+
+// открыть модалку
+reviewBtn.addEventListener('click', () => {
+  modal.classList.add('is-active');
+});
+
+// закрыть модалку
+closeBtn.addEventListener('click', () => {
+  modal.classList.remove('is-active');
+});
+
+// закрытие по клику вне окна
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.classList.remove('is-active');
+  }
+});
+
+// обработка формы
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = form.name.value.trim();
+  const message = form.message.value.trim();
+
+  if (name && message) {
+    console.log('Отзыв отправлен:', { name, message });
+    form.reset();
+    modal.classList.remove('is-active');
+    thankyouPopup.classList.add('is-active');
+  }
+});
+
+// закрытие попапа благодарности
+thankyouClose.addEventListener('click', () => {
+  thankyouPopup.classList.remove('is-active');
+});
+
+// закрытие по клику вне окна
+thankyouPopup.addEventListener('click', (e) => {
+  if (e.target === thankyouPopup) {
+    thankyouPopup.classList.remove('is-active');
+  }
+});

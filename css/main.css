@@ -1525,4 +1525,190 @@ body.dark-theme .about__text {
 .reviews__button:hover {
   background-color: #ff4c0d;
   color: #f1f1f1;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__content {
+  background: -webkit-gradient(linear, left top, right top, from(rgb(212, 111, 74)), color-stop(32%, rgb(179, 48, 48)), color-stop(66%, rgb(134, 90, 75)));
+  background: linear-gradient(90deg, rgb(212, 111, 74) 0%, rgb(179, 48, 48) 32%, rgb(134, 90, 75) 66%);
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.modal.is-active .modal__content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal__title-reviews {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.form__reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+
+.reviews__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4px;
+}
+
+.reviews__input {
+  height: 36px;
+  border-radius: 4px;
+  outline: none;
+  background: rgb(186, 134, 134);
+  padding: 5px 5px 5px 16px;
+  color: #151515;
+  font-size: 16px;
+}
+
+.reviews__textarea {
+  min-height: 120px;
+  border-radius: 4px;
+  outline: none;
+  background: rgb(186, 134, 134);
+  padding: 5px 5px 5px 16px;
+  color: #151515;
+  font-size: 16px;
+  resize: none;
+}
+
+.reviews__modal-button {
+  font-size: 20px;
+  font-weight: 600;
+  -webkit-transition: color 0.25s linear;
+  transition: color 0.25s linear;
+}
+
+.reviews__modal-button:hover,
+.reviews__modal-button:focus {
+  color: #151515;
+}
+
+.reviews__modal-button:active {
+  color: #ff4c0d;
+}
+
+.thankyou {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1100;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.thankyou.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.thankyou__content {
+  background: #7c2a2a;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.thankyou.is-active .thankyou__content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.thankyou__close {
+  margin-top: 15px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #f36c21;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: background 0.25s ease;
+  transition: background 0.25s ease;
+}
+
+.thankyou__close:hover {
+  background: #d95a15;
+}
+
+.thankyou__text {
+  font-size: 24px;
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */
