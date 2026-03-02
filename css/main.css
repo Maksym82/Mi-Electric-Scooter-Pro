@@ -1711,4 +1711,75 @@ body.dark-theme .about__text {
 .thankyou__text {
   font-size: 24px;
   font-weight: 600;
+}
+
+.faq {
+  padding-bottom: 50px;
+}
+
+.faq__content {
+  margin-bottom: 42px;
+}
+
+.faq__title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.2;
+  color: #ff4c0d;
+  margin-bottom: 24px;
+}
+
+.faq__description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.faq__button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 65px;
+  padding: 15px 35px;
+  width: 280px;
+  height: 54px;
+  background-color: #f1f1f1;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #151515;
+}
+
+.faq__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.faq__item-title {
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #f1f1f1;
+  margin-bottom: 24px;
+}
+
+.faq__item-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 150px;
+  height: 3px;
+  background: #ff4c0d;
+}
+
+.faq__item-title:nth-child(2)::after {
+  top: 45px;
 }/*# sourceMappingURL=main.css.map */

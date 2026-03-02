@@ -1,1 +1,67 @@
 @use '../utils/variables' as *;
+
+.faq {
+  padding-bottom: 50px;
+}
+
+.faq__content {
+  margin-bottom: 42px;
+}
+
+.faq__title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.2;
+  color: $colorOrange;
+  margin-bottom: 24px;
+}
+
+.faq__description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.faq__button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 65px;
+  padding: 15px 35px;
+  width: 280px;
+  height: 54px;
+  background-color: $colorWhite;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $colorBlack;
+}
+
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.faq__item-title {
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $colorWhite;
+  margin-bottom: 24px;
+}
+
+.faq__item-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 150px;
+  height: 3px;
+  background: $colorOrange;
+}
+
+.faq__item-title:nth-child(2)::after {
+  top: 45px;
+}
