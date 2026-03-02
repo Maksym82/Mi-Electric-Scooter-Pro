@@ -85,6 +85,7 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
+  grabCursor: true,
   slidesPerView: 1,
   centeredSlides: true,
   spaceBetween: 20,
