@@ -1,7 +1,37 @@
 @use '../utils/variables' as *;
 
 .faq {
+  position: relative;
   padding-bottom: 50px;
+}
+
+.faq::after {
+  content: '';
+  position: absolute;
+  top: 200px;
+  right: 0;
+  width: 526px;
+  height: 528px;
+  z-index: -1;
+  background-image: -webkit-image-set(
+    '../images/faq/faq-decor.avif' type('image/avif'),
+    '../images/faq/faq-decor.webp' type('image/webp'),
+    '../images/faq/faq-decor.png' type('image/png')
+  );
+  background-image: image-set(
+    '../images/faq/faq-decor.avif' type('image/avif'),
+    '../images/faq/faq-decor.webp' type('image/webp'),
+    '../images/faq/faq-decor.png' type('image/png')
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  filter: blur(210px);
+
+  @media (min-width: 1440px) {
+    top: 0;
+    right: auto;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -17,6 +47,10 @@
   @media (min-width: 640px) {
     margin-bottom: 52px;
   }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 0;
+  }
 }
 
 .faq__title {
@@ -29,6 +63,12 @@
   @media (min-width: 640px) {
     font-size: 30px;
     line-height: 1.1;
+  }
+
+  @media (min-width: 1440px) {
+    width: 415px;
+    font-weight: 500;
+    font-size: 45px;
   }
 }
 
@@ -43,6 +83,11 @@
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 24px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 300px;
+    margin-bottom: 70px;
   }
 }
 
