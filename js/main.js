@@ -164,3 +164,27 @@ thankyouPopup.addEventListener('click', (e) => {
     thankyouPopup.classList.remove('is-active');
   }
 });
+
+// === Ask question ===
+document.addEventListener('DOMContentLoaded', () => {
+  const askBtn = document.getElementById('askBtn');
+  const modalFaq = document.getElementById('modalFaq');
+  const closeFaq = document.getElementById('closeFaq');
+
+  // открыть модалку
+  askBtn.addEventListener('click', () => {
+    modalFaq.classList.add('show');
+  });
+
+  // закрыть модалку
+  closeFaq.addEventListener('click', () => {
+    modalFaq.classList.remove('show');
+  });
+
+  // закрытие по клику вне окна
+  window.addEventListener('click', (e) => {
+    if (e.target === modalFaq) {
+      modalFaq.classList.remove('show');
+    }
+  });
+});

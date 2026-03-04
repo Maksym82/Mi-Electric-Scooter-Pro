@@ -1851,6 +1851,10 @@ body.dark-theme .about__text {
   }
 }
 
+body.dark-theme .faq__item-title {
+  color: #151515;
+}
+
 .faq__item-title::after {
   content: "";
   position: absolute;
@@ -1871,4 +1875,64 @@ body.dark-theme .about__text {
     font-size: 14px;
     line-height: 1.6;
   }
+}
+
+.modal-faq.hidden {
+  display: none;
+}
+
+.modal-faq {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  z-index: 5;
+}
+
+.modal-faq.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-faq .modal-content {
+  background: -webkit-gradient(linear, left top, right top, from(rgb(212, 111, 74)), color-stop(32%, rgb(179, 48, 48)), color-stop(66%, rgb(134, 90, 75)));
+  background: linear-gradient(90deg, rgb(212, 111, 74) 0%, rgb(179, 48, 48) 32%, rgb(134, 90, 75) 66%);
+  padding: 20px;
+  border-radius: 6px;
+  width: 600px;
+  position: relative;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.modal-faq.show .modal-content {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.modal-faq .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

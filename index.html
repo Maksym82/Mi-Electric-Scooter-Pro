@@ -1635,7 +1635,32 @@
               Если у вас есть собственный вопрос - задайте его через форму
               обратной связи.
             </p>
-            <button class="faq__button" type="button">Задать вопрос</button>
+            <button id="askBtn" class="faq__button" type="button">Задать вопрос</button>
+
+            <!-- Модальное окно FAQ -->
+            <div id="modalFaq" class="modal-faq">
+              <div class="modal-content">
+                <span id="closeFaq" class="close">&times;</span>
+                <form>
+                  <label>
+                    Имя:
+                    <input type="text" name="name" required />
+                  </label>
+                  <br />
+                  <label>
+                    Почта:
+                    <input type="email" name="email" required />
+                  </label>
+                  <br />
+                  <label>
+                    Ваш вопрос:
+                    <textarea name="question" required></textarea>
+                  </label>
+                  <br />
+                  <button type="submit">Отправить</button>
+                </form>
+              </div>
+            </div>
           </div>
           <ul class="faq__list">
             <li class="faq__item">
@@ -1664,7 +1689,9 @@
             </li>
             <li class="faq__item">
               <h3 class="faq__item-title">Это версия для Китая или Европы?</h3>
-              <p class="faq__item-text">Это Европейская версия, со всеми обновлениями и евро-вилкой.</p>
+              <p class="faq__item-text">
+                Это Европейская версия, со всеми обновлениями и евро-вилкой.
+              </p>
             </li>
           </ul>
         </div>
