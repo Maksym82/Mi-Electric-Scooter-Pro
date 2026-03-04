@@ -103,10 +103,17 @@
   font-size: 16px;
   line-height: 1.5;
   color: $colorBlack;
+  transition: all 0.25s linear;
 
   @media (min-width: 640px) {
     margin: 0;
   }
+}
+
+.faq__button:hover,
+.faq__button:focus {
+  background-color: $colorOrange;
+  color: $colorWhite;
 }
 
 .faq__list {
@@ -171,7 +178,8 @@ body.dark-theme .faq__item-title {
 
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease;z-index: 5;
+  transition: opacity 0.3s ease;
+  z-index: 5;
 }
 
 .modal-faq.show {
@@ -188,7 +196,7 @@ body.dark-theme .faq__item-title {
   );
   padding: 20px;
   border-radius: 6px;
-  width: 600px;
+  width: 400px;
   position: relative;
 
   transform: scale(0.9);
@@ -205,4 +213,46 @@ body.dark-theme .faq__item-title {
   right: 15px;
   font-size: 20px;
   cursor: pointer;
+}
+
+.faq__label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.faq__input {
+  width: 100%;
+  height: 42px;
+  border-radius: 6px;
+  padding: 4px 4px 4px 12px;
+  color: $colorBlack;
+  background: rgb(186, 134, 134);
+  outline: none;
+}
+
+.faq__textarea {
+  min-height: 120px;
+  border-radius: 4px;
+  outline: none;
+  background: rgb(186, 134, 134);
+  padding: 5px 5px 5px 16px;
+  color: $colorBlack;
+  font-size: 16px;
+  resize: none;
+}
+
+.faq__btn-submit {
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 600;
+  transition: color 0.25s linear;
+}
+
+.faq__btn-submit:hover,
+.faq__btn-submit:focus {
+  color: $colorBlack;
 }
