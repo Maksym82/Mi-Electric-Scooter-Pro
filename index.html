@@ -1635,7 +1635,9 @@
               Если у вас есть собственный вопрос - задайте его через форму
               обратной связи.
             </p>
-            <button id="askBtn" class="faq__button" type="button">Задать вопрос</button>
+            <button id="askBtn" class="faq__button" type="button">
+              Задать вопрос
+            </button>
 
             <!-- Модальное окно FAQ -->
             <div id="modalFaq" class="modal-faq">
@@ -1644,20 +1646,36 @@
                 <form>
                   <label class="faq__label">
                     Имя:
-                    <input class="faq__input" type="text" name="name" required />
+                    <input
+                      class="faq__input"
+                      type="text"
+                      name="name"
+                      required
+                    />
                   </label>
                   <br />
                   <label class="faq__label">
                     Почта:
-                    <input class="faq__input" type="email" name="email" required />
+                    <input
+                      class="faq__input"
+                      type="email"
+                      name="email"
+                      required
+                    />
                   </label>
                   <br />
                   <label class="faq__label">
                     Ваш вопрос:
-                    <textarea class="faq__textarea" name="question" required></textarea>
+                    <textarea
+                      class="faq__textarea"
+                      name="question"
+                      required
+                    ></textarea>
                   </label>
                   <br />
-                  <button class="faq__btn-submit" type="submit">Отправить</button>
+                  <button class="faq__btn-submit" type="submit">
+                    Отправить
+                  </button>
                 </form>
               </div>
             </div>
@@ -1696,6 +1714,13 @@
           </ul>
         </div>
       </section>
+      <!-- Модалка благодарности -->
+      <div id="modalThanks" class="modal-thanks">
+        <div class="modal-content">
+          <span id="closeThanks" class="close">&times;</span>
+          <p>Спасибо за ваш вопрос! Мы скоро ответим.</p>
+        </div>
+      </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
