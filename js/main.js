@@ -166,37 +166,14 @@ thankyouPopup.addEventListener('click', (e) => {
 });
 
 // === Ask question ===
-// document.addEventListener('DOMContentLoaded', () => {
-//   const askBtn = document.getElementById('askBtn');
-//   const modalFaq = document.getElementById('modalFaq');
-//   const closeFaq = document.getElementById('closeFaq');
-
-//   // открыть модалку
-//   askBtn.addEventListener('click', () => {
-//     modalFaq.classList.add('show');
-//   });
-
-//   // закрыть модалку
-//   closeFaq.addEventListener('click', () => {
-//     modalFaq.classList.remove('show');
-//   });
-
-//   // закрытие по клику вне окна
-//   window.addEventListener('click', (e) => {
-//     if (e.target === modalFaq) {
-//       modalFaq.classList.remove('show');
-//     }
-//   });
-// });
-// === Ask question ===
 document.addEventListener('DOMContentLoaded', () => {
   const askBtn = document.getElementById('askBtn');
   const modalFaq = document.getElementById('modalFaq');
   const closeFaq = document.getElementById('closeFaq');
   const formFaq = modalFaq.querySelector('form');
 
-  const modalThanks = document.getElementById('modalThanks');
-  const closeThanks = document.getElementById('closeThanks');
+  const thankyouPopup = document.getElementById('faq-thankyou');
+  const thankyouClose = thankyouPopup.querySelector('.faq-thankyou__close');
 
   // открыть модалку FAQ
   askBtn.addEventListener('click', () => {
@@ -208,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
     modalFaq.classList.remove('show');
   });
 
-  // закрытие по клику вне окна
+  // закрытие FAQ по клику вне окна
   modalFaq.addEventListener('click', (e) => {
     if (e.target === modalFaq) {
       modalFaq.classList.remove('show');
@@ -218,33 +195,22 @@ document.addEventListener('DOMContentLoaded', () => {
   // обработка формы FAQ
   formFaq.addEventListener('submit', (e) => {
     e.preventDefault();
-    const name = formFaq.name.value.trim();
-    const email = formFaq.email.value.trim();
-    const question = formFaq.question.value.trim();
-
-    if (name && email && question) {
-      console.log('Вопрос отправлен:', { name, email, question });
-      formFaq.reset();
-      modalFaq.classList.remove('show');
-      modalThanks.classList.add('show');
-
-      // Автоматическое закрытие благодарности через 3 секунды
-      // setTimeout(() => {
-      //   modalThanks.classList.remove('show');
-      // }, 3000);
-    }
+    modalFaq.classList.remove('show');   // скрываем форму
+    formFaq.reset();
+    thankyouPopup.classList.add('show'); // показываем попап
   });
 
-  // закрытие попапа благодарности
-  closeThanks.addEventListener('click', () => {
-    modalThanks.classList.remove('show');
+  // закрытие попапа кнопкой
+  thankyouClose.addEventListener('click', () => {
+    thankyouPopup.classList.remove('show');
   });
 
-  // закрытие по клику вне окна
-  modalThanks.addEventListener('click', (e) => {
-    if (e.target === modalThanks) {
-      modalThanks.classList.remove('show');
+  // закрытие попапа по клику вне окна
+  thankyouPopup.addEventListener('click', (e) => {
+    if (e.target === thankyouPopup) {
+      thankyouPopup.classList.remove('show');
     }
   });
 });
+
 
