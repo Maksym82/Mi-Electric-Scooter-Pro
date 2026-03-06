@@ -232,6 +232,10 @@
             <button id="light-btn" aria-label="Светлая тема">Белый</button>
             <button id="dark-btn" aria-label="Тёмная тема">Чёрный</button>
           </div>
+          <picture>
+            <!-- Desktop 1440px -->
+            <source src="" />
+          </picture>
         </div>
       </section>
       <!-- Advantages -->
@@ -1723,6 +1727,101 @@
           <button class="faq-thankyou__close">Закрыть</button>
         </div>
       </div>
+      <!-- Buy -->
+      <section class="buy">
+        <div class="buy__container">
+          <div class="buy__content">
+            <h2 class="section-title">Mi Electric Scooter Pro</h2>
+            <p class="buy__price">2 11 990 ₴</p>
+            <div>
+              <button aria-label="Светлая тема">Белый</button>
+              <button aria-label="Тёмная тема">Чёрный</button>
+            </div>
+            <div class="buy__img-content">
+              <!-- White bike -->
+              <picture>
+                <!-- Desktop 1440px -->
+                <source
+                  srcset="
+                    ./images/buy/buy-white-bike-desktop.avif    1x,
+                    ./images/buy/buy-white-bike-desktop@2x.avif 2x
+                  "
+                  type="image/avif"
+                  media="(min-width: 1440px)"
+                />
+                <source
+                  srcset="
+                    ./images/buy/buy-white-bike-desktop.webp    1x,
+                    ./images/buy/buy-white-bike-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1440px)"
+                />
+                <source
+                  srcset="
+                    ./images/buy/buy-white-bike-desktop.png    1x,
+                    ./images/buy/buy-white-bike-desktop@2x.png 2x
+                  "
+                  type="image/png"
+                  media="(min-width: 1440px)"
+                />
+                <!-- Tablet 640–1439 -->
+                <source
+                  srcset="
+                    ./images/buy/buy-white-bike-tablet.avif    1x,
+                    ./images/buy/buy-white-bike-tablet@2x.avif 2x
+                  "
+                  type="image/avif"
+                  media="(min-width: 640px)"
+                />
+                <source
+                  srcset="
+                    ./images/buy/buy-white-bike-tablet.webp    1x,
+                    ./images/buy/buy-white-bike-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 640px)"
+                />
+                <source
+                  srcset="
+                    ./images/buy/buy-white-bike-tablet.png    1x,
+                    ./images/buy/buy-white-bike-tablet@2x.png 2x
+                  "
+                  type="image/png"
+                  media="(min-width: 640px)"
+                />
+                <!-- Mobile max-width: 639px -->
+                <source
+                  srcset="
+                    ./images/buy/buy-white-bike-mobile.avif    1x,
+                    ./images/buy/buy-white-bike-mobile@2x.avif 2x
+                  "
+                  type="image/avif"
+                  media="(max-width: 639px)"
+                />
+                <source
+                  srcset="
+                    ./images/buy/buy-white-bike-mobile.webp    1x,
+                    ./images/buy/buy-white-bike-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 639px)"
+                />
+                <!-- Fallback PNG для мобильного -->
+                <img
+                  class="buy__image"
+                  src="./images/buy/buy-white-bike-mobile.png"
+                  srcset="
+                    ./images/buy/buy-white-bike-mobile.png    1x,
+                    ./images/buy/buy-white-bike-mobile@2x.png 2x
+                  "
+                  alt="Стильный электросамокат"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
