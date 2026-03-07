@@ -1,0 +1,8 @@
+@use '../utils/variables' as *;
+
+.buy__price {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: $colorOrange;
+}

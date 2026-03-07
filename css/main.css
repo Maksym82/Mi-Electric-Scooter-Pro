@@ -2047,4 +2047,11 @@ body.dark-theme .faq__item-title {
 .faq-thankyou__text {
   font-size: 24px;
   font-weight: 600;
+}
+
+.buy__price {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #ff4c0d;
 }/*# sourceMappingURL=main.css.map */
