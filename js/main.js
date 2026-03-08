@@ -220,16 +220,33 @@ const buyWhiteScooter = document.getElementById('buy-white-scooter');
 const buyBlackScooter = document.getElementById('buy-black-scooter');
 
 buyLightBtn.addEventListener('click', () => {
+  // переключаем тему
+  body.classList.remove('dark-theme');
+  body.classList.add('light-theme');
+  localStorage.setItem('theme', 'light');
+
+  // переключаем картинки
   buyWhiteScooter.classList.add('is-active');
   buyBlackScooter.classList.remove('is-active');
+
+  // aria-pressed для кнопок
   buyLightBtn.setAttribute('aria-pressed', 'true');
   buyDarkBtn.setAttribute('aria-pressed', 'false');
 });
 
 buyDarkBtn.addEventListener('click', () => {
+  // переключаем тему
+  body.classList.remove('light-theme');
+  body.classList.add('dark-theme');
+  localStorage.setItem('theme', 'dark');
+
+  // переключаем картинки
   buyBlackScooter.classList.add('is-active');
   buyWhiteScooter.classList.remove('is-active');
+
+  // aria-pressed для кнопок
   buyDarkBtn.setAttribute('aria-pressed', 'true');
   buyLightBtn.setAttribute('aria-pressed', 'false');
 });
+
 

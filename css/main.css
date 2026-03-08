@@ -2084,6 +2084,7 @@ body.dark-theme .faq__item-title {
   background: transparent;
   cursor: pointer;
   font-size: 18px;
+  border-radius: 65px;
   -webkit-transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
   transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
 }
@@ -2126,4 +2127,10 @@ body.dark-theme .theme-toggle {
   color: #151515;
   -webkit-transition: background 0.3s ease, color 0.3s ease;
   transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme #buy-dark-btn {
+  background-color: #151515;
+  color: #f1f1f1;
+  border-radius: 65px;
 }/*# sourceMappingURL=main.css.map */

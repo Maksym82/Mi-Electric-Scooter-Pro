@@ -30,6 +30,7 @@
   background: transparent;
   cursor: pointer;
   font-size: 18px;
+  border-radius: 65px;
   transition:
     background $transition,
     color $transition,
@@ -73,4 +74,10 @@ body.dark-theme .theme-toggle {
   transition:
     background 0.3s ease,
     color 0.3s ease;
+}
+
+body.dark-theme #buy-dark-btn {
+  background-color: $colorBlack;
+  color: $colorWhite;
+  border-radius: 65px;
 }
