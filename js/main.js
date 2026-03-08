@@ -213,4 +213,23 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// === Кнопки секции buy ===
+const buyLightBtn = document.getElementById('buy-light-btn');
+const buyDarkBtn = document.getElementById('buy-dark-btn');
+const buyWhiteScooter = document.getElementById('buy-white-scooter');
+const buyBlackScooter = document.getElementById('buy-black-scooter');
+
+buyLightBtn.addEventListener('click', () => {
+  buyWhiteScooter.classList.add('is-active');
+  buyBlackScooter.classList.remove('is-active');
+  buyLightBtn.setAttribute('aria-pressed', 'true');
+  buyDarkBtn.setAttribute('aria-pressed', 'false');
+});
+
+buyDarkBtn.addEventListener('click', () => {
+  buyBlackScooter.classList.add('is-active');
+  buyWhiteScooter.classList.remove('is-active');
+  buyDarkBtn.setAttribute('aria-pressed', 'true');
+  buyLightBtn.setAttribute('aria-pressed', 'false');
+});
 

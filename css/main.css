@@ -1940,7 +1940,7 @@ body.dark-theme .faq__item-title {
 .modal-faq .close {
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: 25px;
   font-size: 20px;
   cursor: pointer;
 }
@@ -2035,7 +2035,7 @@ body.dark-theme .faq__item-title {
   border: none;
   border-radius: 4px;
   background: #f36c3d;
-  color: #fff;
+  color: #f1f1f1;
   font-weight: 600;
   cursor: pointer;
 }
@@ -2054,4 +2054,76 @@ body.dark-theme .faq__item-title {
   font-weight: 600;
   line-height: 1.1;
   color: #ff4c0d;
+  margin-bottom: 24px;
+}
+
+.theme-toggle {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 280px;
+  height: 54px;
+}
+@media (min-width: 640px) {
+  .theme-toggle {
+    width: 248px;
+  }
+}
+
+.theme-toggle button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
+}
+
+body.light-theme .theme-toggle {
+  border: 3px solid #f1f1f1;
+  -webkit-transition: border 0.4s ease-in-out;
+  transition: border 0.4s ease-in-out;
+  border-radius: 65px;
+}
+
+body.dark-theme .theme-toggle {
+  border: 3px solid #151515;
+  -webkit-transition: border 0.4s ease-in-out;
+  transition: border 0.4s ease-in-out;
+  border-radius: 65px;
+}
+
+.buy__img-content {
+  position: relative;
+}
+
+.buy__img-content picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.buy__img-content picture.is-active {
+  opacity: 1;
+  position: relative;
+}
+
+.theme-toggle button[aria-pressed=true] {
+  border-radius: 65px;
+  background-color: #f1f1f1;
+  color: #151515;
+  -webkit-transition: background 0.3s ease, color 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }/*# sourceMappingURL=main.css.map */

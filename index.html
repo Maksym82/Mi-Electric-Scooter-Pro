@@ -232,10 +232,6 @@
             <button id="light-btn" aria-label="Светлая тема">Белый</button>
             <button id="dark-btn" aria-label="Тёмная тема">Чёрный</button>
           </div>
-          <picture>
-            <!-- Desktop 1440px -->
-            <source src="" />
-          </picture>
         </div>
       </section>
       <!-- Advantages -->
@@ -1733,13 +1729,13 @@
           <div class="buy__content">
             <h2 class="section-title">Mi Electric Scooter Pro 2</h2>
             <p class="buy__price">11 990 ₴</p>
-            <div>
-              <button aria-label="Светлая тема">Белый</button>
-              <button aria-label="Тёмная тема">Чёрный</button>
+            <div class="theme-toggle">
+              <button id="buy-light-btn" class="active" aria-label="Светлая тема">Белый</button>
+              <button id="buy-dark-btn" aria-label="Тёмная тема">Чёрный</button>
             </div>
             <div class="buy__img-content">
               <!-- White bike -->
-              <picture>
+              <picture id="buy-white-scooter" class="is-active">
                 <!-- Desktop 1440px -->
                 <source
                   srcset="
@@ -1819,7 +1815,7 @@
                 />
               </picture>
               <!-- Black bike -->
-              <picture>
+              <picture id="buy-black-scooter">
                 <source
                   srcset="
                     ./images/buy/dark-bike/buy-dark-bike-desktop.avif    1x,

@@ -5,4 +5,72 @@
   font-weight: 600;
   line-height: 1.1;
   color: $colorOrange;
+  margin-bottom: 24px;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 280px;
+  height: 54px;
+
+  @media (min-width: 640px) {
+    width: 248px;
+  }
+}
+
+.theme-toggle button {
+  flex: 1;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  transition:
+    background $transition,
+    color $transition,
+    border-radius $transition;
+}
+
+body.light-theme .theme-toggle {
+  border: 3px solid $colorWhite;
+  transition: border $transition;
+  border-radius: 65px;
+}
+
+body.dark-theme .theme-toggle {
+  border: 3px solid $colorBlack;
+  transition: border $transition;
+  border-radius: 65px;
+}
+
+// ============
+.buy__img-content {
+  position: relative;
+}
+
+.buy__img-content picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.buy__img-content picture.is-active {
+  opacity: 1;
+  position: relative;
+}
+
+.theme-toggle button[aria-pressed='true'] {
+  border-radius: 65px;
+  background-color: $colorWhite;
+  color: $colorBlack;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
 }
