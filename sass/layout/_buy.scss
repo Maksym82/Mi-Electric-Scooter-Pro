@@ -1,5 +1,10 @@
 @use '../utils/variables' as *;
 
+.buy__title {
+  width: 175px;
+  margin-bottom: 12px;
+}
+
 .buy__price {
   font-size: 20px;
   font-weight: 600;
@@ -69,11 +74,14 @@ body.dark-theme .theme-toggle {
 
 .theme-toggle button[aria-pressed='true'] {
   border-radius: 65px;
-  background-color: $colorWhite;
   color: $colorBlack;
   transition:
     background 0.3s ease,
     color 0.3s ease;
+}
+
+body.light-theme #buy-light-btn {
+  background-color: $colorWhite;
 }
 
 body.dark-theme #buy-dark-btn {
