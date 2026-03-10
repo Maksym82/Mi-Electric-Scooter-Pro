@@ -1,5 +1,17 @@
 @use '../utils/variables' as *;
 
+.buy__content {
+  width: 280px;
+  height: 618px;
+  background-color: $colorBlack;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+body.dark-theme .buy__content {
+  background-color: $colorWhite;
+}
+
 .buy__title {
   width: 175px;
   margin-bottom: 12px;
@@ -17,7 +29,7 @@
   display: inline-flex;
   border-radius: 8px;
   overflow: hidden;
-  width: 280px;
+  width: 220px;
   height: 54px;
 
   @media (min-width: 640px) {
@@ -88,4 +100,33 @@ body.dark-theme #buy-dark-btn {
   background-color: $colorBlack;
   color: $colorWhite;
   border-radius: 65px;
+}
+
+.buy__button {
+  display: block;
+  margin: 0 auto 16px;
+  border-radius: 65px;
+  padding: 15px 35px;
+  width: 220px;
+  height: 54px;
+  background-color: $colorOrange;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $colorWhite;
+  cursor: pointer;
+}
+
+.buy__set {
+  display: block;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $colorWhite;
+  cursor: pointer;
+}
+
+body.dark-theme .buy__set {
+  color: $colorBlack;
 }

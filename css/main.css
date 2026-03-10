@@ -2049,6 +2049,18 @@ body.dark-theme .faq__item-title {
   font-weight: 600;
 }
 
+.buy__content {
+  width: 280px;
+  height: 618px;
+  background-color: #151515;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+body.dark-theme .buy__content {
+  background-color: #f1f1f1;
+}
+
 .buy__title {
   width: 175px;
   margin-bottom: 12px;
@@ -2068,7 +2080,7 @@ body.dark-theme .faq__item-title {
   display: inline-flex;
   border-radius: 8px;
   overflow: hidden;
-  width: 280px;
+  width: 220px;
   height: 54px;
 }
 @media (min-width: 640px) {
@@ -2141,4 +2153,33 @@ body.dark-theme #buy-dark-btn {
   background-color: #151515;
   color: #f1f1f1;
   border-radius: 65px;
+}
+
+.buy__button {
+  display: block;
+  margin: 0 auto 16px;
+  border-radius: 65px;
+  padding: 15px 35px;
+  width: 220px;
+  height: 54px;
+  background-color: #ff4c0d;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+.buy__set {
+  display: block;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+body.dark-theme .buy__set {
+  color: #151515;
 }/*# sourceMappingURL=main.css.map */
