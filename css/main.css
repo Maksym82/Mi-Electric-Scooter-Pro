@@ -2050,7 +2050,7 @@ body.dark-theme .faq__item-title {
 }
 
 .buy__content {
-  width: 280px;
+  max-width: 335px;
   height: 618px;
   background-color: #151515;
   border-radius: 15px;
@@ -2075,13 +2075,14 @@ body.dark-theme .buy__content {
 }
 
 .theme-toggle {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-radius: 8px;
   overflow: hidden;
   width: 220px;
   height: 54px;
+  margin: 0 auto;
 }
 @media (min-width: 640px) {
   .theme-toggle {
@@ -2127,7 +2128,9 @@ body.dark-theme .theme-toggle {
 .buy__img-content picture {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   opacity: 0;
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
@@ -2135,7 +2138,6 @@ body.dark-theme .theme-toggle {
 
 .buy__img-content picture.is-active {
   opacity: 1;
-  position: relative;
 }
 
 .theme-toggle button[aria-pressed=true] {
@@ -2157,7 +2159,7 @@ body.dark-theme #buy-dark-btn {
 
 .buy__button {
   display: block;
-  margin: 0 auto 16px;
+  margin: 270px auto 16px;
   border-radius: 65px;
   padding: 15px 35px;
   width: 220px;
