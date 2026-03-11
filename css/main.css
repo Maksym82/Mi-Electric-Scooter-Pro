@@ -2056,6 +2056,12 @@ body.dark-theme .faq__item-title {
   border-radius: 15px;
   padding: 25px;
 }
+@media (min-width: 640px) {
+  .buy__content {
+    max-width: 560px;
+    height: 420px;
+  }
+}
 
 body.dark-theme .buy__content {
   background-color: #f1f1f1;
@@ -2065,6 +2071,11 @@ body.dark-theme .buy__content {
   width: 175px;
   margin-bottom: 12px;
 }
+@media (min-width: 640px) {
+  .buy__title {
+    width: 335px;
+  }
+}
 
 .buy__price {
   font-size: 20px;
@@ -2073,8 +2084,14 @@ body.dark-theme .buy__content {
   color: #ff4c0d;
   margin-bottom: 24px;
 }
+@media (min-width: 640px) {
+  .buy__price {
+    font-size: 25px;
+    line-height: 1.05;
+  }
+}
 
-.theme-toggle {
+.buy__content > .theme-toggle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2085,8 +2102,11 @@ body.dark-theme .buy__content {
   margin: 0 auto;
 }
 @media (min-width: 640px) {
-  .theme-toggle {
+  .buy__content > .theme-toggle {
+    position: relative;
+    z-index: 2;
     width: 248px;
+    margin: 0;
   }
 }
 
@@ -2135,6 +2155,12 @@ body.dark-theme .theme-toggle {
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
 }
+@media (min-width: 640px) {
+  .buy__img-content picture {
+    top: -240px;
+    left: 71%;
+  }
+}
 
 .buy__img-content picture.is-active {
   opacity: 1;
@@ -2143,8 +2169,8 @@ body.dark-theme .theme-toggle {
 .theme-toggle button[aria-pressed=true] {
   border-radius: 65px;
   color: #151515;
-  -webkit-transition: background 0.3s ease, color 0.3s ease;
-  transition: background 0.3s ease, color 0.3s ease;
+  -webkit-transition: background 0.4s ease, color 0.4s ease;
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
 body.light-theme #buy-light-btn {
@@ -2171,6 +2197,11 @@ body.dark-theme #buy-dark-btn {
   color: #f1f1f1;
   cursor: pointer;
 }
+@media (min-width: 640px) {
+  .buy__button {
+    margin: 125px auto 16px 0;
+  }
+}
 
 .buy__set {
   display: block;
@@ -2180,6 +2211,11 @@ body.dark-theme #buy-dark-btn {
   line-height: 1.5;
   color: #f1f1f1;
   cursor: pointer;
+}
+@media (min-width: 640px) {
+  .buy__set {
+    margin: 0;
+  }
 }
 
 body.dark-theme .buy__set {

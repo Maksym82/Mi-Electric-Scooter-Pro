@@ -6,6 +6,11 @@
   background-color: $colorBlack;
   border-radius: 15px;
   padding: 25px;
+
+  @media (min-width: 640px) {
+    max-width: 560px;
+    height: 420px;
+  }
 }
 
 body.dark-theme .buy__content {
@@ -15,6 +20,10 @@ body.dark-theme .buy__content {
 .buy__title {
   width: 175px;
   margin-bottom: 12px;
+
+  @media (min-width: 640px) {
+    width: 335px;
+  }
 }
 
 .buy__price {
@@ -23,9 +32,14 @@ body.dark-theme .buy__content {
   line-height: 1.1;
   color: $colorOrange;
   margin-bottom: 24px;
+
+  @media (min-width: 640px) {
+    font-size: 25px;
+    line-height: 1.05;
+  }
 }
 
-.theme-toggle {
+.buy__content > .theme-toggle {
   display: flex;
   border-radius: 8px;
   overflow: hidden;
@@ -34,7 +48,10 @@ body.dark-theme .buy__content {
   margin: 0 auto;
 
   @media (min-width: 640px) {
+    position: relative;
+    z-index: 2;
     width: 248px;
+    margin: 0;
   }
 }
 
@@ -76,9 +93,14 @@ body.dark-theme .theme-toggle {
   position: absolute;
   top: 0;
   left: 50%;
-transform: translateX(-50%);
+  transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.5s ease;
+
+  @media (min-width: 640px) {
+    top: -240px;
+    left: 71%;
+  }
 }
 
 .buy__img-content picture.is-active {
@@ -89,8 +111,8 @@ transform: translateX(-50%);
   border-radius: 65px;
   color: $colorBlack;
   transition:
-    background 0.3s ease,
-    color 0.3s ease;
+    background 0.4s ease,
+    color 0.4s ease;
 }
 
 body.light-theme #buy-light-btn {
@@ -116,6 +138,10 @@ body.dark-theme #buy-dark-btn {
   line-height: 1.5;
   color: $colorWhite;
   cursor: pointer;
+
+  @media (min-width: 640px) {
+    margin: 125px auto 16px 0;
+  }
 }
 
 .buy__set {
@@ -126,6 +152,10 @@ body.dark-theme #buy-dark-btn {
   line-height: 1.5;
   color: $colorWhite;
   cursor: pointer;
+
+  @media (min-width: 640px) {
+    margin: 0;
+  }
 }
 
 body.dark-theme .buy__set {
