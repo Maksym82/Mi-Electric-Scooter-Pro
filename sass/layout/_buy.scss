@@ -11,6 +11,11 @@
     max-width: 560px;
     height: 420px;
   }
+
+  @media (min-width: 1440px) {
+    max-width: 1160px;
+    height: 550px;
+  }
 }
 
 body.dark-theme .buy__content {
@@ -24,6 +29,11 @@ body.dark-theme .buy__content {
   @media (min-width: 640px) {
     width: 335px;
   }
+
+  @media (min-width: 1440px) {
+    width: 500px;
+    color: $colorWhite;
+  }
 }
 
 .buy__price {
@@ -36,6 +46,11 @@ body.dark-theme .buy__content {
   @media (min-width: 640px) {
     font-size: 25px;
     line-height: 1.05;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 30px;
+    line-height: 1.2;
   }
 }
 
@@ -100,6 +115,10 @@ body.dark-theme .theme-toggle {
   @media (min-width: 640px) {
     top: -240px;
     left: 71%;
+  }
+
+  @media (min-width: 1440px) {
+    top: -305px;
   }
 }
 

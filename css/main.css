@@ -1717,6 +1717,11 @@ body.dark-theme .about__text {
   position: relative;
   padding-bottom: 50px;
 }
+@media (min-width: 1440px) {
+  .faq {
+    padding-bottom: 150px;
+  }
+}
 
 .faq::after {
   content: "";
@@ -2062,6 +2067,12 @@ body.dark-theme .faq__item-title {
     height: 420px;
   }
 }
+@media (min-width: 1440px) {
+  .buy__content {
+    max-width: 1160px;
+    height: 550px;
+  }
+}
 
 body.dark-theme .buy__content {
   background-color: #f1f1f1;
@@ -2076,6 +2087,12 @@ body.dark-theme .buy__content {
     width: 335px;
   }
 }
+@media (min-width: 1440px) {
+  .buy__title {
+    width: 500px;
+    color: #f1f1f1;
+  }
+}
 
 .buy__price {
   font-size: 20px;
@@ -2088,6 +2105,12 @@ body.dark-theme .buy__content {
   .buy__price {
     font-size: 25px;
     line-height: 1.05;
+  }
+}
+@media (min-width: 1440px) {
+  .buy__price {
+    font-size: 30px;
+    line-height: 1.2;
   }
 }
 
@@ -2159,6 +2182,11 @@ body.dark-theme .theme-toggle {
   .buy__img-content picture {
     top: -240px;
     left: 71%;
+  }
+}
+@media (min-width: 1440px) {
+  .buy__img-content picture {
+    top: -305px;
   }
 }
 
