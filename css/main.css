@@ -814,6 +814,7 @@ body.light-theme .advantages__item-title {
   .advantages .advantages__images picture img {
     max-width: 760px;
     height: auto;
+    border-radius: 15px;
     display: block;
   }
 }
