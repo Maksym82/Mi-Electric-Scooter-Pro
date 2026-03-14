@@ -209,6 +209,10 @@ body.dark-theme .buy__set {
     color: $colorWhite;
     margin-bottom: 16px;
   }
+
+  body.dark-theme .set__box-title {
+    color: $colorBlack;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -226,5 +230,9 @@ body.dark-theme .buy__set {
     line-height: 1.5;
     letter-spacing: -0.01em;
     color: #fff;
+  }
+
+  body.dark-theme .set__box-text {
+    color: $colorBlack;
   }
 }
