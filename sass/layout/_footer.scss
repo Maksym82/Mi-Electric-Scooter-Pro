@@ -1,1 +1,19 @@
 @use '../utils/variables' as *;
+
+.footer {
+  padding: 30px 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: $colorBlack;
+}
+
+body.light-theme .footer {
+  color: $colorWhite;
+}
+
+.footer__container {
+  padding: 0 10px;
+}
