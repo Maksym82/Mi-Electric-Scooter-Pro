@@ -17,3 +17,14 @@ body.light-theme .footer {
 .footer__container {
   padding: 0 10px;
 }
+
+.footer__left-side,
+.footer__right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer__left-side {
+  margin-bottom: 8px;
+}
