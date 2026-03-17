@@ -2320,6 +2320,17 @@ body.dark-theme .buy__set {
   text-align: center;
   color: #151515;
 }
+@media (min-width: 640px) {
+  .footer {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+@media (min-width: 1440px) {
+  .footer {
+    line-height: 1.5;
+  }
+}
 
 body.light-theme .footer {
   color: #f1f1f1;
@@ -2327,6 +2338,21 @@ body.light-theme .footer {
 
 .footer__container {
   padding: 0 10px;
+}
+@media (min-width: 1440px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 140px;
+  }
 }
 
 .footer__left-side,
@@ -2343,4 +2369,16 @@ body.light-theme .footer {
 
 .footer__left-side {
   margin-bottom: 8px;
+}
+@media (min-width: 1440px) {
+  .footer__left-side {
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer__right-side {
+    text-align: end;
+  }
 }/*# sourceMappingURL=main.css.map */
