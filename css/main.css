@@ -740,10 +740,15 @@ body.light-theme .advantages__item-title {
 .advantages__tab-title::after {
   content: "";
   display: block;
-  width: 100%;
+  width: 100px;
   height: 3px;
   background: #ff4c0d;
   margin-top: 8px;
+}
+@media (min-width: 640px) {
+  .advantages__tab-title::after {
+    width: 150px;
+  }
 }
 @media (min-width: 1440px) {
   .advantages__tab-title::after {
@@ -2071,6 +2076,7 @@ body.dark-theme .faq__item-title {
 }
 @media (min-width: 1440px) {
   .buy__content {
+    background-image: url("../images/buy/bg-footer-desktop.png");
     position: relative;
     max-width: 1160px;
     height: 550px;

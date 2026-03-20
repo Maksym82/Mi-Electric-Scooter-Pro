@@ -147,10 +147,14 @@ body.light-theme .advantages__item-title {
     &::after {
       content: '';
       display: block;
-      width: 100%;
+      width: 100px;
       height: 3px;
       background: $colorOrange;
       margin-top: 8px;
+
+      @media (min-width: 640px) {
+        width: 150px;
+      }
 
       @media (min-width: 1440px) {
         background: $colorWhite;
