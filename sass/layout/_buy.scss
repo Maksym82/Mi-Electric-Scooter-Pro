@@ -237,3 +237,53 @@ body.dark-theme .buy__set {
     color: $colorBlack;
   }
 }
+// === Modal ===
+/* Общие стили */
+.modal,
+.popup {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.modal.is-active,
+.popup.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal.is-active .modal__overlay {
+  opacity: 1;
+}
+
+.modal__content,
+.popup__content {
+  position: relative;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-20px);
+  transition: transform 0.3s ease;
+}
+
+.modal.is-active .modal__content,
+.popup.is-active .popup__content {
+  transform: translateY(0);
+}

@@ -2317,6 +2317,70 @@ body.dark-theme .buy__set {
     color: #151515;
   }
 }
+/* Общие стили */
+.modal,
+.popup {
+  position: fixed;
+  inset: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.modal.is-active,
+.popup.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.modal.is-active .modal__overlay {
+  opacity: 1;
+}
+
+.modal__content,
+.popup__content {
+  position: relative;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.modal.is-active .modal__content,
+.popup.is-active .popup__content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .footer {
   padding: 30px 0;
   font-weight: 400;

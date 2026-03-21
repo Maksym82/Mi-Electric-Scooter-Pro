@@ -51,7 +51,7 @@
         <button class="icon-menu" type="button" aria-label="Відкрити меню">
           <span></span>
         </button>
-        <a class="header__link" href="">Купить</a>
+        <button class="header__link" type="button">Купить</button>
       </div>
     </header>
     <main>
@@ -1917,7 +1917,7 @@
                 />
               </picture>
             </div>
-            <button class="buy__button">Купить</button>
+            <button class="buy__button" type="button">Купить</button>
             <button class="buy__set">Комплект поставки</button>
             <div class="set__box">
               <h3 class="set__box-title">Комплект поставки</h3>
@@ -1948,6 +1948,38 @@
           </div>
         </div>
       </section>
+      <!-- Модальное окно -->
+      <div class="modal" id="buyModal" aria-hidden="true">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+          <button class="modal__close" aria-label="Закрыть">&times;</button>
+          <h2>Оформить заказ</h2>
+          <form id="buyForm">
+            <label>
+              Имя:
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Телефон:
+              <input
+                type="tel"
+                name="phone"
+                required
+              
+              />
+            </label>
+            <button type="submit" class="modal__submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Попап благодарности -->
+      <div class="popup" id="thankPopup" aria-hidden="true">
+        <div class="popup__content">
+          <p>Мы с вами скоро свяжемся</p>
+          <button class="popup__close">Ок</button>
+        </div>
+      </div>
     </main>
     <!-- Footer -->
     <footer class="footer">

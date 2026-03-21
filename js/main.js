@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // обработка формы FAQ
   formFaq.addEventListener('submit', (e) => {
     e.preventDefault();
-    modalFaq.classList.remove('show');   // скрываем форму
+    modalFaq.classList.remove('show'); // скрываем форму
     formFaq.reset();
     thankyouPopup.classList.add('show'); // показываем попап
   });
@@ -249,4 +249,43 @@ buyDarkBtn.addEventListener('click', () => {
   buyLightBtn.setAttribute('aria-pressed', 'false');
 });
 
+// =====================
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('buyModal');
+  const popup = document.getElementById('thankPopup');
+  const form = document.getElementById('buyForm');
+
+  // Открытие модалки
+  document.querySelectorAll('.header__link, .buy__button').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      modal.classList.add('is-active');
+    });
+  });
+
+  // Закрытие модалки
+  modal.querySelector('.modal__close').addEventListener('click', () => {
+    modal.classList.remove('is-active');
+  });
+  modal.querySelector('.modal__overlay').addEventListener('click', () => {
+    modal.classList.remove('is-active');
+  });
+
+  // Отправка формы
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    modal.classList.remove('is-active');
+    popup.classList.add('is-active');
+    form.reset();
+  });
+
+  // Закрытие попапа
+  popup.querySelector('.popup__close').addEventListener('click', () => {
+    popup.classList.remove('is-active');
+  });
+  popup.addEventListener('click', (e) => {
+    if (e.target === popup) {
+      popup.classList.remove('is-active');
+    }
+  });
+});
 
