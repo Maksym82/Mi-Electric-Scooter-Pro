@@ -753,6 +753,7 @@ body.light-theme .advantages__item-title {
 @media (min-width: 1440px) {
   .advantages__tab-title::after {
     background: #f1f1f1;
+    width: 100%;
   }
 }
 .advantages__tab.active .advantages__tab-title::after {
@@ -2076,7 +2077,6 @@ body.dark-theme .faq__item-title {
 }
 @media (min-width: 1440px) {
   .buy__content {
-    background-image: url("../images/buy/bg-footer-desktop.png");
     position: relative;
     max-width: 1160px;
     height: 550px;
