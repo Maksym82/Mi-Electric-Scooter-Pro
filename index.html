@@ -1953,20 +1953,15 @@
         <div class="modal__overlay"></div>
         <div class="modal__content">
           <button class="modal__close" aria-label="Закрыть">&times;</button>
-          <h2>Оформить заказ</h2>
-          <form id="buyForm">
-            <label>
+          <h2 class="modal__buy-title">Оформить заказ</h2>
+          <form class="buy__form" id="buyForm">
+            <label class="buy__label">
               Имя:
-              <input type="text" name="name" required />
+              <input class="buy__input" type="text" name="name" required />
             </label>
-            <label>
+            <label class="buy__label">
               Телефон:
-              <input
-                type="tel"
-                name="phone"
-                required
-              
-              />
+              <input class="buy__input" type="tel" name="phone" required />
             </label>
             <button type="submit" class="modal__submit">Отправить</button>
           </form>
