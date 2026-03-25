@@ -1455,7 +1455,7 @@ body.dark-theme .about__text {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 14px;
+  gap: 24px;
   margin-top: 16px;
 }
 @media (min-width: 640px) {
@@ -1803,14 +1803,13 @@ body.dark-theme .about__text {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.7;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 @media (min-width: 640px) {
   .faq__description {
     width: 400px;
     font-size: 14px;
     line-height: 1.6;
-    margin-bottom: 24px;
   }
 }
 @media (min-width: 1440px) {
