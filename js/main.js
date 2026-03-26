@@ -289,3 +289,28 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+// === Set modal ===
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("setModal");
+  const openBtn = document.querySelector(".buy__set");
+  const closeBtn = modal.querySelector(".set-modal__close");
+
+  // Открыть модалку
+  openBtn.addEventListener("click", () => {
+    modal.style.display = "flex";
+  });
+
+  // Закрыть модалку
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Закрытие по клику вне контента
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
+
