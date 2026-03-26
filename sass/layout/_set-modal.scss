@@ -13,7 +13,10 @@
 
 /* Контент модалки */
 .set-modal__content {
-  background: #fff;
+  background: $colorBurgerMenu;
+  color: $colorBlack;
+  font-size: 18px;
+  font-weight: 600;
   padding: 20px;
   border-radius: 8px;
   max-width: 90%;
@@ -46,16 +49,16 @@
   }
 }
 
-/* Для десктопа модалка не нужна */
-@media (min-width: 1024px) {
+
+@media (min-width: 1440px) {
   .buy__set {
-    display: none; /* скрываем кнопку */
+    display: none; 
   }
   #setModal {
-    display: none !important; /* модалка не используется */
+    display: none;
   }
   .set__box-title,
   .set__box-list {
-    display: block; /* показываем список */
+    display: block; 
   }
 }

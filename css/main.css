@@ -2525,7 +2525,10 @@ body.light-theme .footer {
 
 /* Контент модалки */
 .set-modal__content {
-  background: #fff;
+  background: #865a4b;
+  color: #151515;
+  font-size: 18px;
+  font-weight: 600;
   padding: 20px;
   border-radius: 8px;
   max-width: 90%;
@@ -2572,16 +2575,15 @@ body.light-theme .footer {
             transform: scale(1);
   }
 }
-/* Для десктопа модалка не нужна */
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .buy__set {
-    display: none; /* скрываем кнопку */
+    display: none;
   }
   #setModal {
-    display: none !important; /* модалка не используется */
+    display: none;
   }
   .set__box-title,
   .set__box-list {
-    display: block; /* показываем список */
+    display: block;
   }
 }/*# sourceMappingURL=main.css.map */
