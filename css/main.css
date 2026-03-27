@@ -2529,7 +2529,7 @@ body.light-theme .footer {
   color: #151515;
   font-size: 18px;
   font-weight: 600;
-  padding: 20px;
+  padding: 30px 20px;
   border-radius: 8px;
   max-width: 90%;
   max-height: 80%;
@@ -2545,6 +2545,7 @@ body.light-theme .footer {
   top: 10px;
   right: 15px;
   background: none;
+  color: #f1f1f1;
   border: none;
   font-size: 24px;
   cursor: pointer;
@@ -2582,8 +2583,26 @@ body.light-theme .footer {
   #setModal {
     display: none;
   }
-  .set__box-title,
+  .set__box-modal-title,
   .set__box-list {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
+}
+.set__box-modal-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  color: #f1f1f1;
+  margin-bottom: 16px;
+}
+
+.set__box-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #f1f1f1;
 }/*# sourceMappingURL=main.css.map */
