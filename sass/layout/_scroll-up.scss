@@ -2,7 +2,7 @@
 
 .scroll-up {
   position: fixed;
-  bottom: 35px;
+  bottom: 50px;
   left: 71%;
   z-index: 25;
   width: 50px;
@@ -25,7 +25,7 @@
   }
 
   @media (min-width: 1440px) {
-    left: 81%;
+    left: 80%;
   }
 }
 

@@ -2609,7 +2609,7 @@ body.light-theme .footer {
 
 .scroll-up {
   position: fixed;
-  bottom: 35px;
+  bottom: 50px;
   left: 71%;
   z-index: 25;
   width: 50px;
@@ -2638,7 +2638,7 @@ body.light-theme .footer {
 }
 @media (min-width: 1440px) {
   .scroll-up {
-    left: 81%;
+    left: 80%;
   }
 }
 
