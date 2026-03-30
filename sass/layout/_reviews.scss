@@ -143,6 +143,18 @@
   background-color: $colorOrange;
 }
 
+.icon-arrow {
+  width: 24px;
+  height: 24px;
+  fill: $colorBlack;
+  transition: fill 0.25s linear;
+}
+
+.icon-arrow:hover,
+.icon-arrow:focus {
+  fill: $colorWhite;
+}
+
 .reviews__button {
   display: block;
   margin: 0 auto;

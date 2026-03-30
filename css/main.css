@@ -1509,6 +1509,19 @@ body.dark-theme .about__text {
   background-color: #ff4c0d;
 }
 
+.icon-arrow {
+  width: 24px;
+  height: 24px;
+  fill: #151515;
+  -webkit-transition: fill 0.25s linear;
+  transition: fill 0.25s linear;
+}
+
+.icon-arrow:hover,
+.icon-arrow:focus {
+  fill: #f1f1f1;
+}
+
 .reviews__button {
   display: block;
   margin: 0 auto;
