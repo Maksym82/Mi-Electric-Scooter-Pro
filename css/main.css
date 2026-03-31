@@ -1500,26 +1500,20 @@ body.dark-theme .about__text {
   border-radius: 50%;
   background-color: #f1f1f1;
   cursor: pointer;
-  -webkit-transition: background-color 0.25s linear;
-  transition: background-color 0.25s linear;
+  fill: #151515;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
 }
 
 .my-prev:hover,
 .my-next:hover {
   background-color: #ff4c0d;
+  fill: #f1f1f1;
 }
 
 .icon-arrow {
   width: 24px;
   height: 24px;
-  fill: #151515;
-  -webkit-transition: fill 0.25s linear;
-  transition: fill 0.25s linear;
-}
-
-.icon-arrow:hover,
-.icon-arrow:focus {
-  fill: #f1f1f1;
 }
 
 .reviews__button {
