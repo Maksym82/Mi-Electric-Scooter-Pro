@@ -1713,7 +1713,7 @@ body.dark-theme .about__text {
   border: none;
   border-radius: 6px;
   background: #f36c21;
-  color: #fff;
+  color: #f1f1f1;
   cursor: pointer;
   -webkit-transition: background 0.25s ease;
   transition: background 0.25s ease;
@@ -2233,11 +2233,11 @@ body.dark-theme #buy-dark-btn {
   padding: 15px 35px;
   width: 220px;
   height: 54px;
-  background-color: #ec3d00;
+  background-color: #c53000;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-  color: #f1f1f1;
+  color: #fff;
   cursor: pointer;
 }
 @media (min-width: 640px) {
