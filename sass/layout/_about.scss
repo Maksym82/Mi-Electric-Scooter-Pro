@@ -38,18 +38,18 @@
     width: 428px;
     height: 100%;
     background-image: -webkit-image-set(
-      '../images/about/about-decor-left.avif' type('image/avif'),
-      '../images/about/about-decor-left.webp' type('image/webp'),
-      '../images/about/about-decor-left.png' type('image/png')
+      '../images/about/about-decor-left-2.avif' type('image/avif'),
+      '../images/about/about-decor-left-2.webp' type('image/webp'),
+      '../images/about/about-decor-left-2.png' type('image/png')
     );
     background-image: image-set(
-      '../images/about/about-decor-left.avif' type('image/avif'),
-      '../images/about/about-decor-left.webp' type('image/webp'),
-      '../images/about/about-decor-left.png' type('image/png')
+      '../images/about/about-decor-left-2.avif' type('image/avif'),
+      '../images/about/about-decor-left-2.webp' type('image/webp'),
+      '../images/about/about-decor-left-2.png' type('image/png')
     );
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    z-index: -1;
+    z-index: 0;
   }
 }
 
@@ -76,6 +76,7 @@
     top: 50%;
     max-width: 460px;
     line-height: 1.5;
+    z-index: 1;
   }
 }
 
