@@ -17,7 +17,7 @@
   color: $colorBlack;
   font-size: 18px;
   font-weight: 600;
-  padding: 30px 20px;
+  padding: 40px 20px;
   border-radius: 8px;
   max-width: 90%;
   max-height: 80%;
@@ -34,7 +34,7 @@
   background: none;
   color: $colorWhite;
   border: none;
-  font-size: 24px;
+  font-size: 28px;
   cursor: pointer;
 }
 
@@ -72,10 +72,20 @@
   margin-bottom: 16px;
 }
 
+.set__box-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .set__box-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.01em;
   color: $colorWhite;
+
+  @media (min-width: 640px) {
+    font-size: 18px;
+  }
 }

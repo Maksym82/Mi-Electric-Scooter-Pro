@@ -2540,7 +2540,7 @@ body.light-theme .footer {
   color: #151515;
   font-size: 18px;
   font-weight: 600;
-  padding: 30px 20px;
+  padding: 40px 20px;
   border-radius: 8px;
   max-width: 90%;
   max-height: 80%;
@@ -2558,7 +2558,7 @@ body.light-theme .footer {
   background: none;
   color: #f1f1f1;
   border: none;
-  font-size: 24px;
+  font-size: 28px;
   cursor: pointer;
 }
 
@@ -2610,12 +2610,28 @@ body.light-theme .footer {
   margin-bottom: 16px;
 }
 
+.set__box-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+
 .set__box-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.01em;
   color: #f1f1f1;
+}
+@media (min-width: 640px) {
+  .set__box-text {
+    font-size: 18px;
+  }
 }
 
 .scroll-up {
