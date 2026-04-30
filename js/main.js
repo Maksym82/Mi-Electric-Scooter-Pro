@@ -254,41 +254,85 @@ document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('buyModal');
   const popup = document.getElementById('thankPopup');
   const form = document.getElementById('buyForm');
+  const popupClose = popup.querySelector('.popup__close');
 
   // Открытие модалки
   document.querySelectorAll('.header__link, .buy__button').forEach((btn) => {
     btn.addEventListener('click', () => {
       modal.classList.add('is-active');
+      modal.setAttribute('aria-hidden', 'false');
     });
   });
 
   // Закрытие модалки
-  modal.querySelector('.modal__close').addEventListener('click', () => {
+  const closeModal = () => {
     modal.classList.remove('is-active');
-  });
-  modal.querySelector('.modal__overlay').addEventListener('click', () => {
-    modal.classList.remove('is-active');
-  });
+    modal.setAttribute('aria-hidden', 'true');
+  };
+  modal.querySelector('.modal__close').addEventListener('click', closeModal);
+  modal.querySelector('.modal__overlay').addEventListener('click', closeModal);
 
   // Отправка формы
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    modal.classList.remove('is-active');
+    closeModal();
     popup.classList.add('is-active');
+    popup.setAttribute('aria-hidden', 'false');
+    popupClose.focus(); // фокус сразу на кнопку «Ок»
     form.reset();
   });
 
   // Закрытие попапа
-  popup.querySelector('.popup__close').addEventListener('click', () => {
+  const closePopup = () => {
     popup.classList.remove('is-active');
-  });
+    popup.setAttribute('aria-hidden', 'true');
+  };
+  popupClose.addEventListener('click', closePopup);
   popup.addEventListener('click', (e) => {
     if (e.target === popup) {
-      popup.classList.remove('is-active');
+      closePopup();
     }
   });
 });
 
+// document.addEventListener('DOMContentLoaded', () => {
+//   const modal = document.getElementById('buyModal');
+//   const popup = document.getElementById('thankPopup');
+//   const form = document.getElementById('buyForm');
+
+//   // Открытие модалки
+//   document.querySelectorAll('.header__link, .buy__button').forEach((btn) => {
+//     btn.addEventListener('click', () => {
+//       modal.classList.add('is-active');
+//     });
+//   });
+
+//   // Закрытие модалки
+//   modal.querySelector('.modal__close').addEventListener('click', () => {
+//     modal.classList.remove('is-active');
+//   });
+//   modal.querySelector('.modal__overlay').addEventListener('click', () => {
+//     modal.classList.remove('is-active');
+//   });
+
+//   // Отправка формы
+//   form.addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     modal.classList.remove('is-active');
+//     popup.classList.add('is-active');
+//     form.reset();
+//   });
+
+//   // Закрытие попапа
+//   popup.querySelector('.popup__close').addEventListener('click', () => {
+//     popup.classList.remove('is-active');
+//   });
+//   popup.addEventListener('click', (e) => {
+//     if (e.target === popup) {
+//       popup.classList.remove('is-active');
+//     }
+//   });
+// });
 
 // === Set modal ===
 document.addEventListener("DOMContentLoaded", () => {
