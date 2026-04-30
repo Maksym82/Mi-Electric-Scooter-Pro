@@ -254,118 +254,75 @@ document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('buyModal');
   const popup = document.getElementById('thankPopup');
   const form = document.getElementById('buyForm');
-  const popupClose = popup.querySelector('.popup__close');
 
   // Открытие модалки
   document.querySelectorAll('.header__link, .buy__button').forEach((btn) => {
     btn.addEventListener('click', () => {
       modal.classList.add('is-active');
-      modal.setAttribute('aria-hidden', 'false');
     });
   });
 
   // Закрытие модалки
-  const closeModal = () => {
+  modal.querySelector('.modal__close').addEventListener('click', () => {
     modal.classList.remove('is-active');
-    modal.setAttribute('aria-hidden', 'true');
-  };
-  modal.querySelector('.modal__close').addEventListener('click', closeModal);
-  modal.querySelector('.modal__overlay').addEventListener('click', closeModal);
+  });
+  modal.querySelector('.modal__overlay').addEventListener('click', () => {
+    modal.classList.remove('is-active');
+  });
 
   // Отправка формы
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    closeModal();
+    modal.classList.remove('is-active');
     popup.classList.add('is-active');
-    popup.setAttribute('aria-hidden', 'false');
-    popupClose.focus(); // фокус сразу на кнопку «Ок»
     form.reset();
   });
 
   // Закрытие попапа
-  const closePopup = () => {
+  popup.inert = true; // закрыто
+  popup.inert = false; // открыто
+  popup.querySelector('.popup__close').addEventListener('click', () => {
     popup.classList.remove('is-active');
-    popup.setAttribute('aria-hidden', 'true');
-  };
-  popupClose.addEventListener('click', closePopup);
+  });
   popup.addEventListener('click', (e) => {
     if (e.target === popup) {
-      closePopup();
+      popup.classList.remove('is-active');
     }
   });
 });
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   const modal = document.getElementById('buyModal');
-//   const popup = document.getElementById('thankPopup');
-//   const form = document.getElementById('buyForm');
-
-//   // Открытие модалки
-//   document.querySelectorAll('.header__link, .buy__button').forEach((btn) => {
-//     btn.addEventListener('click', () => {
-//       modal.classList.add('is-active');
-//     });
-//   });
-
-//   // Закрытие модалки
-//   modal.querySelector('.modal__close').addEventListener('click', () => {
-//     modal.classList.remove('is-active');
-//   });
-//   modal.querySelector('.modal__overlay').addEventListener('click', () => {
-//     modal.classList.remove('is-active');
-//   });
-
-//   // Отправка формы
-//   form.addEventListener('submit', (e) => {
-//     e.preventDefault();
-//     modal.classList.remove('is-active');
-//     popup.classList.add('is-active');
-//     form.reset();
-//   });
-
-//   // Закрытие попапа
-//   popup.querySelector('.popup__close').addEventListener('click', () => {
-//     popup.classList.remove('is-active');
-//   });
-//   popup.addEventListener('click', (e) => {
-//     if (e.target === popup) {
-//       popup.classList.remove('is-active');
-//     }
-//   });
-// });
-
 // === Set modal ===
-document.addEventListener("DOMContentLoaded", () => {
-  const modal = document.getElementById("setModal");
-  const openBtn = document.querySelector(".buy__set");
-  const closeBtn = modal.querySelector(".set-modal__close");
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('setModal');
+  const openBtn = document.querySelector('.buy__set');
+  const closeBtn = modal.querySelector('.set-modal__close');
 
   // Открыть модалку
-  openBtn.addEventListener("click", () => {
-    modal.style.display = "flex";
+  openBtn.addEventListener('click', () => {
+    modal.style.display = 'flex';
   });
 
   // Закрыть модалку
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
   });
 
   // Закрытие по клику вне контента
-  modal.addEventListener("click", (e) => {
+  modal.addEventListener('click', (e) => {
     if (e.target === modal) {
-      modal.style.display = "none";
+      modal.style.display = 'none';
     }
   });
 });
 
 // === Scroll up ===
 const offset = 100;
-const scrollUp = document.querySelector(".scroll-up");
-const scrollUpSvgPath = document.querySelector(".scroll-up-svg-path");
+const scrollUp = document.querySelector('.scroll-up');
+const scrollUpSvgPath = document.querySelector('.scroll-up-svg-path');
 const pathLength = scrollUpSvgPath.getTotalLength();
 
 scrollUpSvgPath.style.strokeDasharray = `${pathLength} ${pathLength}`;
-scrollUpSvgPath.style.transition = "stroke-dashoffset 20ms";
+scrollUpSvgPath.style.transition = 'stroke-dashoffset 20ms';
 
 const getTop = () => window.scrollY || document.documentElement.scrollTop;
 
@@ -377,19 +334,19 @@ const updateDashoffset = () => {
 };
 
 // onScroll
-window.addEventListener("scroll", () => {
+window.addEventListener('scroll', () => {
   updateDashoffset();
   if (getTop() > offset) {
-    scrollUp.classList.add("scroll-up-active");
+    scrollUp.classList.add('scroll-up-active');
   } else {
-    scrollUp.classList.remove("scroll-up-active");
+    scrollUp.classList.remove('scroll-up-active');
   }
 });
 
 // click
-scrollUp.addEventListener("click", () => {
+scrollUp.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
-    behavior: "smooth",
+    behavior: 'smooth',
   });
 });
